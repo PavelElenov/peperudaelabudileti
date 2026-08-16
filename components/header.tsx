@@ -27,9 +27,9 @@ export function Header() {
             <Image
               src="/images/peperuda-logo.svg"
               alt="Peperuda butterfly logo"
-              width={48}
+              width={200}
               height={48}
-              className="h-11 w-11 object-contain mix-blend-multiply"
+              className="h-11 object-contain mix-blend-multiply"
             />
           </Link>
         </div>

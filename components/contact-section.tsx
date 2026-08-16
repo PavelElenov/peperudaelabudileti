@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
-import { Mail, Phone, MapPin, Send } from "lucide-react"
+import { Mail, Phone, MapPin, Send, Clock } from "lucide-react"
 import { useLanguage } from "@/lib/i18n"
 
 export function ContactSection() {
@@ -68,6 +68,18 @@ export function ContactSection() {
                       </span>
                     ))}
                   </p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-accent flex items-center justify-center">
+                  <Clock className="w-5 h-5 text-primary" strokeWidth={1.5} />
+                </div>
+                <div>
+                  <h4 className="font-medium text-foreground">{t.contact.workingTimeLabel}</h4>
+                  <span className="text-muted-foreground hover:text-primary transition-colors">
+                    {t.contact.workingTime}
+                  </span>
                 </div>
               </div>
 

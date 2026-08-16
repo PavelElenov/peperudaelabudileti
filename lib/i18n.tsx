@@ -21,7 +21,7 @@ export const translations = {
       quoteAfter: " is created.",
       intro:
         "Peperuda is a place where every woman can come ; be restored, learn and grow in a safe enviroment ; and to be set free with all their potential and skillsPeperuda is a place where every woman can come ; be restored, learn and grow in a safe enviroment ; and to be set free with all their potential and skills.",
-      discoverMission: "Discover Our Mission",
+      discoverMission: "Our Mission",
       supportUs: "Support Us",
     },
     about: {
@@ -137,6 +137,8 @@ export const translations = {
       addressLabel: "Address",
       address: "Sliven\nDame Gruev 7",
       phoneLabel: "Phone",
+      workingTimeLabel: "Working Hours",
+      workingTime: "Mon - Fri: 09:00 - 18:00",
       emailLabel: "Email",
       followUs: "Follow Us",
       sendTitle: "Send Us a Message",
@@ -302,6 +304,8 @@ export const translations = {
       addressLabel: "Адрес",
       address: "гр. Сливен\nж.к. Даме Груев 7",
       phoneLabel: "Телефон",
+      workingTimeLabel: "Работно време",
+      workingTime: "Пон - Пет: 09:00 - 18:00",
       emailLabel: "Имейл",
       followUs: "Последвайте ни",
       sendTitle: "Изпратете ни съобщение",

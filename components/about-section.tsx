@@ -130,8 +130,13 @@ export function AboutSection() {
 
         {/* Butterfly meaning section */}
         <div className="max-w-4xl mx-auto text-center mb-16">
-          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground italic text-balance mb-6">
+          {/* <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground italic text-balance mb-6">
             <span className="text-primary">Peperuda</span>{t.about.butterflyBefore}
+          </h2> */}
+          <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl text-primary leading-relaxed text-balance">
+            {t.hero.quoteBefore}
+            <span className="font-semibold">{t.hero.quoteHighlight}</span>
+            {t.hero.quoteAfter}
           </h2>
         </div>
 
@@ -246,17 +251,14 @@ export function AboutSection() {
 
         {/* Decorative butterfly */}
         <div className="mt-16 flex justify-center">
-          <svg
-            className="w-16 h-16 text-primary/40"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="1"
-          >
-            <path d="M12 3c-1.5 2-3 4-3 6s1.5 4 3 4 3-2 3-4-1.5-4-3-6z" />
-            <path d="M12 13c-3 0-6 2-8 5 2-1 4-1 6 0 1 .5 1.5 1 2 2 .5-1 1-1.5 2-2 2-1 4-1 6 0-2-3-5-5-8-5z" />
-            <path d="M12 13v8" />
-          </svg>
+          <Image
+            src="/images/peperuda-logo.jpeg"
+            alt="Peperuda butterfly logo"
+            width={96}
+            height={96}
+            className="h-20 w-20 md:h-24 md:w-24 object-contain mix-blend-multiply"
+            priority
+          />
         </div>
       </div>
     </section>

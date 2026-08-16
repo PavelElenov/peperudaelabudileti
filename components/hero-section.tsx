@@ -56,15 +56,9 @@ export function HeroSection() {
       {/* Main content area with quote */}
       <div className="relative flex-1 flex flex-col items-center justify-center px-6 pb-32">
         <div className="text-center max-w-3xl mx-auto">
-          <p className="font-serif text-2xl md:text-3xl lg:text-4xl text-primary leading-relaxed text-balance">
-            {t.hero.quoteBefore}
-            <span className="font-semibold">{t.hero.quoteHighlight}</span>
-            {t.hero.quoteAfter}
-          </p>
-          
-          <p className="mt-8 text-base md:text-lg text-foreground/80 max-w-2xl mx-auto leading-relaxed">
-            {t.hero.intro}
-          </p>
+          <h1 className="font-serif text-2xl md:text-3xl lg:text-4xl text-primary leading-relaxed text-balance">
+            <span className="text-primary font-bold">Peperuda</span>{t.about.butterflyBefore}
+          </h1>
         </div>
 
         {/* CTA buttons */}
