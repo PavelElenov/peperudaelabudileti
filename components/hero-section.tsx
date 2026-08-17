@@ -25,7 +25,7 @@ export function HeroSection() {
       </div>
 
       {/* Top section with logo */}
-      <div className="relative pt-28 pb-8 text-center">
+      <div className="relative pt-28 text-center">
         {/* Butterfly logo */}
         <div className="flex justify-center mb-4">
           <Image
@@ -41,9 +41,13 @@ export function HeroSection() {
         {/* Decorative line with logo */}
         <div className="flex items-center justify-center gap-6 mb-2">
           <div className="h-px w-20 md:w-32 bg-primary/50" />
-          <span className="font-[family-name:var(--font-script)] text-5xl md:text-6xl lg:text-7xl text-primary">
-            Peperuda
-          </span>
+          <Image
+            src="/images/peperuda-logo.svg"
+            alt="Peperuda butterfly logo"
+            width={220}
+            height={120}
+            className="w-35 md:w-50 object-contain mix-blend-multiply"
+          />
           <div className="h-px w-20 md:w-32 bg-primary/50" />
         </div>
 
