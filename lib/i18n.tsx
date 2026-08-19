@@ -9,6 +9,7 @@ export const translations = {
     nav: {
       home: "Home",
       about: "About Us",
+      program: "Program",
       donate: "Donate",
       contact: "Contact",
       shop: "Shop",
@@ -20,8 +21,8 @@ export const translations = {
       quoteHighlight: "something beautiful",
       quoteAfter: " is created.",
       intro:
-        "Peperuda is a place where every woman can come ; be restored, learn and grow in a safe enviroment ; and to be set free with all their potential and skillsPeperuda is a place where every woman can come ; be restored, learn and grow in a safe enviroment ; and to be set free with all their potential and skills.",
-      discoverMission: "Our Mission",
+        "Peperuda is a place where young women and mothers can learn practical skills and gain knowledge that will enable them to find better job opportunities and provide for their children.",
+      discoverMission: "Discover Our Mission",
       supportUs: "Support Us",
     },
     about: {
@@ -82,6 +83,45 @@ export const translations = {
       origin6:
         "What is my assignment, my puzzle piece, through which I can help young mothers find freedom and regain the dignity that belongs to them?",
     },
+    program: {
+      eyebrow: "Our Program",
+      title: "Metamorphosis",
+      subtitle: "A little help leaves a big mark!",
+      intro1:
+        "\"Metamorphosis\" is a program for women and mothers who are going through a difficult period in their lives but have not given up on their desire to grow, learn, and build a better future for themselves and their children. It is suitable for women who wish to develop their knowledge, skills, and opportunities for a more independent life.",
+      intro2:
+        "Sometimes, to change your life, all you need is one opportunity. That is why \"Metamorphosis\" combines support for the family with the opportunity for development. Participants can join trainings and educational activities to acquire practical skills – such as sewing, knitting, and other useful activities.",
+      stepsTitle: "Every small step matters",
+      steps1:
+        "For each visit and active participation, the women receive \"Peperuda points.\" These points can be exchanged for products from various categories that the family needs – essential goods, food and hygiene products, children's items, clothing, and more. So every visit matters.",
+      steps2:
+        "A woman comes to learn something new. She takes part in creating new handmade products and receives points with which she can help her family. She comes back again, learns, and improves. With each next step she becomes more confident in her skills.",
+      stepsHighlight: "This is \"Metamorphosis.\"",
+      impact1:
+        "This change is possible thanks to you! Every donation you make turns a little help into a big change.",
+      impact2:
+        "Behind every \"Peperuda point\" stands real support. With your donation we can provide the necessary products, materials, and conditions so the program can reach more women and families.",
+      impact3:
+        "Your support can give a woman a reason to keep attending the program, to learn, to develop her skills, and to believe that she can change her life.",
+      packagesTitle: "You can support \"Metamorphosis\" with:",
+      packages: [
+        { amount: "5 €", label: "\"Essentials\" / \"Starter\" package" },
+        { amount: "10 €", label: "\"Additional products\" package" },
+        { amount: "20 €", label: "\"For children\" & \"Hygiene products\" package" },
+        { amount: "30 €", label: "One seamstress's wage for one month" },
+        { amount: "60 €", label: "Two seamstresses' wages for one month" },
+      ],
+      closingLines: [
+        "Not every change begins with a big step.",
+        "Sometimes it begins with one lesson.",
+        "With one newly learned stitch.",
+        "With one visit.",
+        "With one food package.",
+        "With one helping hand.",
+      ],
+      closingText:
+        "Because when we give a woman the opportunity to develop, we are not only helping her. By supporting \"Metamorphosis,\" you help a woman take her next step. A little help leaves a big mark!",
+    },
     donate: {
       eyebrow: "Support Our Mission",
       heading: "Every contribution, big or small, adds a new piece to our story.",
@@ -137,8 +177,6 @@ export const translations = {
       addressLabel: "Address",
       address: "Sliven\nDame Gruev 7",
       phoneLabel: "Phone",
-      workingTimeLabel: "Working Hours",
-      workingTime: "Mon - Fri: 09:00 - 18:00",
       emailLabel: "Email",
       followUs: "Follow Us",
       sendTitle: "Send Us a Message",
@@ -176,6 +214,7 @@ export const translations = {
     nav: {
       home: "Начало",
       about: "За нас",
+      program: "Програма",
       donate: "Дарете",
       contact: "Контакти",
       shop: "Магазин",
@@ -242,12 +281,51 @@ export const translations = {
         "Тя се променя мигновено. В ъгълчетата на устните ѝ се появява усмивка и тя тихо казва името си. Погледът ми се насочва към корема ѝ — тя е бременна в напреднал стадий.",
       origin3:
         "Нали точно затова се преместих в България? Заради младите майки, дори непълнолетните майки? Питам я кога е термът ѝ, как се чувства физически, дали има други деца. Купувам ѝ хляб и банани. Тя повече не ме помоли за пари.",
-      origin4: "Не — някой да я попита за името ѝ струва повече от пари.",
+      origin4: "Не — някой да я попита за името ѝ струва повече от пар��.",
       originHighlight: "Някой я вижда. Тя има значение. Тя е някой.",
       origin5:
         "Срам ме е от първата ми реакция към нея, но съм благодарна, че в онзи момент си спомних какво наистина има значение.",
       origin6:
         "Каква е моята задача, моето парченце от пъзела, чрез което мога да помогна на младите майки да намерят свобода и да си върнат достойнството, което им принадлежи?",
+    },
+    program: {
+      eyebrow: "Нашата програма",
+      title: "Метаморфоза",
+      subtitle: "Малката помощ оставя голяма следа!",
+      intro1:
+        "„Метаморфоза“ е програма за жени и майки, които преминават през труден период от живота си, но не са се отказали от желанието да се развиват, да учат и да изградят по-добро бъдеще за себе си и своите деца. Подходяща е за жени, които имат желание да развиват своите знания, умения и възможности за по-самостоятелен живот.",
+      intro2:
+        "Понякога, за да промениш живота си, е нужна само една възможност. Затова „Метаморфоза“ съчетава подкрепа за семейството с възможност за развитие. Участничките могат да се включат в обучения и образователни занимания за придобиване на практически умения – като шиене, плетене и други полезни дейности.",
+      stepsTitle: "Всяка малка стъпка има значение",
+      steps1:
+        "За всяко свое посещение и активно участие жените получават „Пеперуда точки“. Тези точки могат да бъдат обменяни за продукти от различни категории, от които семейството има нужда – продукти от първа необходимост, хранителни и хигиенни продукти, детски стоки, дрехи и други. Така всяко посещение има значение.",
+      steps2:
+        "Една жена идва, за да научи нещо ново. Участва в изработването на нови ръчно изработени продукти и получава точки, с които може да помогне на своето семейство. Връща се отново, учи се и се усъвършенства. С всяка следваща стъпка става по-уверена в своите умения.",
+      stepsHighlight: "Това е „Метаморфоза“.",
+      impact1:
+        "Тази промяна е възможна благодарение на вас! Всяко ваше дарение превръща малката помощ в голяма промяна.",
+      impact2:
+        "Зад всяка „Пеперуда точка“ стои реална подкрепа. С вашето дарение можем да осигурим необходимите продукти, материали и условия, за да може програмата да достигне до повече жени и семейства.",
+      impact3:
+        "Вашата подкрепа може да даде на една жена причина да продължи да посещава програмата, да се учи, да развива уменията си и да повярва, че може да промени живота си.",
+      packagesTitle: "Можете да подкрепите „Метаморфоза“ с:",
+      packages: [
+        { amount: "5 €", label: "пакет „Първа необходимост“ / „Начален пакет“" },
+        { amount: "10 €", label: "пакет „Допълнителни продукти“" },
+        { amount: "20 €", label: "пакет „За деца“ и „Хигиенни продукти“" },
+        { amount: "30 €", label: "възнаграждение на една шивачка за един месец" },
+        { amount: "60 €", label: "възнаграждение на две шивачки за един месец" },
+      ],
+      closingLines: [
+        "Не всяка промяна започва с голяма крачка.",
+        "Понякога започва с един урок.",
+        "С един нов научен шев.",
+        "С едно посещение.",
+        "С един пакет храна.",
+        "С една подадена ръка.",
+      ],
+      closingText:
+        "Защото когато дадем на една жена възможност да се развива, ние не помагаме само на нея. Подкрепяйки „Метаморфоза“, вие помагате на една жена да направи своята следваща крачка. Малката помощ оставя голяма следа!",
     },
     donate: {
       eyebrow: "Подкрепете нашата мисия",
@@ -304,8 +382,6 @@ export const translations = {
       addressLabel: "Адрес",
       address: "гр. Сливен\nж.к. Даме Груев 7",
       phoneLabel: "Телефон",
-      workingTimeLabel: "Работно време",
-      workingTime: "Пон - Пет: 09:00 - 18:00",
       emailLabel: "Имейл",
       followUs: "Последвайте ни",
       sendTitle: "Изпратете ни съобщение",
