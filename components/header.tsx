@@ -15,6 +15,7 @@ export function Header() {
   const navigation = [
     { name: t.nav.home, href: "#" },
     { name: t.nav.about, href: "#about" },
+    { name: t.nav.program, href: "#program" },
     { name: t.nav.donate, href: "#donate" },
     { name: t.nav.contact, href: "#contact" },
   ]
