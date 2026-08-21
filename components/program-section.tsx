@@ -117,12 +117,6 @@ export function ProgramSection() {
             ))}
           </ul>
           <p className="text-foreground leading-relaxed mb-8">{t.program.closingText}</p>
-          <Button size="lg" asChild className="text-base">
-            <Link href="#donate">
-              <Heart className="mr-2 h-4 w-4" />
-              {t.hero.supportUs}
-            </Link>
-          </Button>
         </div>
       </div>
     </section>

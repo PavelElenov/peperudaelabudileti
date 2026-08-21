@@ -62,9 +62,9 @@ export function Header() {
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:items-center lg:gap-x-4">
           <LanguageSwitcher />
-          <Button variant="outline" asChild>
+          {/* <Button variant="outline" asChild>
             <Link href="#donate">{t.nav.shop}</Link>
-          </Button>
+          </Button> */}
           <Button asChild>
             <Link href="#donate">{t.nav.donate}</Link>
           </Button>
