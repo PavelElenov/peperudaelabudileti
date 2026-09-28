@@ -63,9 +63,6 @@ export function ProgramSection() {
 
         {/* Impact statement */}
         <div className="rounded-2xl bg-card border border-border p-8 lg:p-12 mb-16">
-          <div className="flex justify-center mb-6">
-            <Sparkles className="w-8 h-8 text-primary" strokeWidth={1.5} />
-          </div>
           <div className="space-y-4 max-w-3xl mx-auto text-center">
             <p className="text-lg font-medium text-foreground leading-relaxed">
               {t.program.impact1}
@@ -78,7 +75,6 @@ export function ProgramSection() {
         {/* Support packages */}
         <div className="mb-16">
           <div className="flex items-center justify-center gap-3 mb-8">
-            <Scissors className="w-6 h-6 text-primary" strokeWidth={1.5} />
             <h3 className="font-serif text-2xl lg:text-3xl font-semibold text-foreground text-center">
               {t.program.packagesTitle}
             </h3>

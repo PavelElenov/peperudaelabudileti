@@ -36,9 +36,9 @@ export const translations = {
         "Peperuda aims to offer hope, open new perspectives, and give families the chance to stay together.",
       intro4:
         "Using old fabrics and other recyclable materials, new handmade products are created. From what is old and broken, something beautiful is created.",
-      slivenTitle: "A lot is happening in Sliven, Bulgaria",
+      slivenTitle: "What’s happening in Sliven, Bulgaria?",
       slivenText:
-        'Sliven is often called "the unofficial capital of prostitution in Eastern Europe." Trafficking for sexual exploitation is the main form, with most women trafficked to other European countries. Sliven has Bulgaria\'s highest share of people with only primary or lower education, high unemployment, and significant poverty—all above national averages.',
+        ' Sliven has been identified as a significant center for trafficking in Bulgaria. Sexual exploitation is the predominant form of trafficking in the area, with many victims trafficked to other European countries. The city also faces significant socioeconomic challenges, including Bulgaria’s highest proportion of residents with only primary-level education or below, as well as unemployment and poverty rates that exceed national averages.',
       valuesTitle: "Our Core Values",
       values: {
         one: {
@@ -70,7 +70,7 @@ export const translations = {
       },
       originTitle: "A moment when a dream was born",
       origin1:
-        "A young woman is standing in front of Kaufland. Our eyes meet. I catch myself quickly looking away, hoping she won't come towards me. I just wanted to do a quick grocery run. Out of the corner of my eye, I see her coming closer. Her hair is tangled, her expressions empty but yet so piercing. There's layers of dirt on her clothes and hands. I stop walking. Suddenly I'm fully awake, and before she has the chance to ask me for money, I ask her:",
+        "A young woman is standing in front of a store. Our eyes meet. I catch myself quickly looking away, hoping she won't come towards me. I just wanted to do a quick grocery run. Out of the corner of my eye, I see her coming closer. Her hair is tangled, her expressions empty but yet so piercing. There's layers of dirt on her clothes and hands. I stop walking. Suddenly I'm fully awake, and before she has the chance to ask me for money, I ask her:",
       originQuote: '"What\'s your name?"',
       origin2:
         "Her being changes instantly. A smile appears at the corners of her mouth, and she quietly says her name. My eyes wander to her belly – she's heavily pregnant.",
@@ -98,16 +98,16 @@ export const translations = {
         "A woman comes to learn something new. She takes part in creating new handmade products and receives points with which she can help her family. She comes back again, learns, and improves. With each next step she becomes more confident in her skills.",
       stepsHighlight: "This is \"Metamorphosis.\"",
       impact1:
-        "This change is possible thanks to you! Every donation you make turns a little help into a big change.",
+        "This change is possible because of you! Every donation turns a small help into a big change.",
       impact2:
         "Behind every \"Peperuda point\" stands real support. With your donation we can provide the necessary products, materials, and conditions so the program can reach more women and families.",
       impact3:
         "Your support can give a woman a reason to keep attending the program, to learn, to develop her skills, and to believe that she can change her life.",
       packagesTitle: "You can support \"Metamorphosis\" with:",
       packages: [
-        { amount: "5 €", label: "\"Essentials\" / \"Starter\" package" },
-        { amount: "10 €", label: "\"Additional products\" package" },
-        { amount: "20 €", label: "\"For children\" & \"Hygiene products\" package" },
+        { amount: "5 €", label: "\"Essentials\" / \"Starter\" - package" },
+        { amount: "10 €", label: "\"Additional products\" - package" },
+        { amount: "20 €", label: "\"For children\" & \"Hygiene products\" - package" },
         { amount: "30 €", label: "One seamstress's wage for one month" },
         { amount: "60 €", label: "Two seamstresses' wages for one month" },
       ],
@@ -120,7 +120,7 @@ export const translations = {
         "With one helping hand.",
       ],
       closingText:
-        "Because when we give a woman the opportunity to develop, we are not only helping her. By supporting \"Metamorphosis,\" you help a woman take her next step. A little help leaves a big mark!",
+        "When we give a woman the opportunity to develop, we are not only helping her - but helping her to take the next step. By supporting “Metamorphosis” you can do that. A little help can leave a big mark!",
     },
     donate: {
       eyebrow: "Support Our Mission",
@@ -177,7 +177,7 @@ export const translations = {
       addressLabel: "Address",
       address: "Sliven\nDame Gruev 7",
       workingTimeLabel: "Monday - Friday",
-      workingTime: "10:00 - 17:30",
+      workingTime: "09:00 - 17:00 or 11:00 - 15:00",
       phoneLabel: "Phone",
       emailLabel: "Email",
       followUs: "Follow Us",
@@ -384,7 +384,7 @@ export const translations = {
       addressLabel: "Адрес",
       address: "гр. Сливен\nж.к. Даме Груев 7",
       workingTimeLabel: "Понеделник - Петък",
-      workingTime: "10:00 - 17:30",
+      workingTime: "09:00 - 17:00 или 11:00 - 17:00",
       phoneLabel: "Телефон",
       emailLabel: "Имейл",
       followUs: "Последвайте ни",
