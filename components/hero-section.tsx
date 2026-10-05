@@ -52,7 +52,7 @@ export function HeroSection() {
         </div>
 
         {/* Tagline */}
-        <p className="mt-6 flex flex-wrap justify-center gap-x-6 md:gap-x-10 gap-y-2 font-[family-name:var(--font-display)] text-xl md:text-3xl font-extrabold italic uppercase tracking-wide text-primary">
+        <p className="mt-6 flex flex-wrap justify-center gap-x-8 md:gap-x-12 gap-y-2 font-script text-4xl md:text-5xl leading-tight text-primary">
           {t.hero.tagline.split(" ").map((word) => (
             <span key={word}>{word}</span>
           ))}
