@@ -1,27 +1,26 @@
 import type { Metadata } from 'next'
-import { Cormorant_Garamond, Inter, Dancing_Script, Montserrat } from 'next/font/google'
+import { Great_Vibes, Lora, Montserrat } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { LanguageProvider } from '@/lib/i18n'
 import './globals.css'
 
+// Closest Cyrillic-capable matches for the Canva flyer fonts: Garet, Cooper BT, Halimum.
 const montserrat = Montserrat({
   subsets: ["latin", "cyrillic"],
-  weight: ["600", "700", "800"],
+  weight: ["400", "500", "600", "700", "800"],
   style: ["normal", "italic"],
-  variable: '--font-display'
+  variable: '--font-montserrat'
 });
-const cormorant = Cormorant_Garamond({ 
+const lora = Lora({
   subsets: ["latin", "cyrillic"],
   weight: ["400", "500", "600", "700"],
-  variable: '--font-serif'
+  style: ["normal", "italic"],
+  variable: '--font-lora'
 });
-const inter = Inter({ 
-  subsets: ["latin"],
-  variable: '--font-sans'
-});
-const dancing = Dancing_Script({
-  subsets: ["latin"],
-  variable: '--font-script'
+const greatVibes = Great_Vibes({
+  subsets: ["latin", "cyrillic"],
+  weight: "400",
+  variable: '--font-great-vibes'
 });
 
 export const metadata: Metadata = {
@@ -54,7 +53,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${cormorant.variable} ${dancing.variable} ${montserrat.variable} font-sans antialiased`}>
+      <body className={`${montserrat.variable} ${lora.variable} ${greatVibes.variable} font-sans antialiased`}>
         <LanguageProvider>
           {children}
         </LanguageProvider>
