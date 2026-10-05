@@ -47,11 +47,13 @@ function HandsIcon({ className }: { className?: string }) {
       strokeLinejoin="round"
       aria-hidden="true"
     >
-      <path d="M10 44c4-2 8-5 12-9 2-2 4-3 6-3 3 0 5 2 8 2" />
-      <path d="M54 44c-4-2-8-5-12-9-2-2-4-3-6-3" />
-      <path d="M28 32l-4 4c-1 1-1 3 0 4s3 1 4 0l3-3" />
-      <path d="M36 34l4 4c1 1 1 3 0 4s-3 1-4 0" />
-      <path d="M22 26c2-2 5-3 7-2M42 26c-2-2-5-3-7-2" />
+      <circle cx="32" cy="18" r="6" />
+      <path d="M21 42c0-7 5-12 11-12s11 5 11 12" />
+      <circle cx="14" cy="26" r="4.5" />
+      <path d="M5 46c0-6 4-10 9-10 2.5 0 4.5 1 6 2.5" />
+      <circle cx="50" cy="26" r="4.5" />
+      <path d="M59 46c0-6-4-10-9-10-2.5 0-4.5 1-6 2.5" />
+      <path d="M8 52c8 4 16 6 24 6s16-2 24-6" />
     </svg>
   )
 }
@@ -145,8 +147,8 @@ export function AboutSection() {
           <div className="relative">
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
               <Image
-                src="/images/about-sewing.png"
-                alt="Women working together sewing handmade products from recycled fabrics"
+                src="/images/about-handwork.png"
+                alt="Hands stitching a patchwork made from recycled fabric scraps"
                 fill
                 className="object-cover"
               />
@@ -155,19 +157,11 @@ export function AboutSection() {
             <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-accent/30 rounded-2xl -z-10" />
           </div>
 
-          <div>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-              {t.about.intro1}
-            </p>
-            <p className="text-muted-foreground leading-relaxed mb-4">
-              {t.about.intro2}
-            </p>
-            <p className="text-muted-foreground leading-relaxed mb-4">
-              {t.about.intro3}
-            </p>
-            <p className="text-foreground font-medium leading-relaxed">
-              {t.about.intro4}
-            </p>
+          <div className="flex flex-col gap-4 text-base md:text-lg leading-relaxed text-muted-foreground">
+            <p>{t.about.intro1}</p>
+            <p>{t.about.intro2}</p>
+            <p>{t.about.intro3}</p>
+            <p className="text-foreground font-medium">{t.about.intro4}</p>
           </div>
         </div>
 
@@ -193,27 +187,29 @@ export function AboutSection() {
 
         {/* Values Rows */}
         <div className="mb-12">
-          <h3 className="font-serif text-2xl lg:text-3xl font-semibold text-foreground text-center mb-16">
+          <h3 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground text-center text-balance mb-10 lg:mb-14">
             {t.about.valuesTitle}
           </h3>
-          <div className="max-w-5xl mx-auto flex flex-col gap-14 lg:gap-20">
+          <ul className="max-w-5xl mx-auto grid gap-5 md:grid-cols-2 md:gap-6">
             {values.map((value) => (
-              <div
+              <li
                 key={value.title}
-                className="grid grid-cols-1 md:grid-cols-[1.1fr_auto_2fr] items-center gap-4 md:gap-10"
+                className="flex flex-col gap-4 rounded-2xl border border-border bg-secondary/40 p-6 lg:p-8"
               >
-                <h4 className="font-serif text-3xl lg:text-4xl font-bold text-primary uppercase tracking-tight leading-none text-balance">
-                  {value.title}
-                </h4>
-                <div className="flex justify-center">
-                  <value.Icon className="w-20 h-20 lg:w-24 lg:h-24 text-primary" />
+                <div className="flex items-center gap-4">
+                  <div className="flex size-16 shrink-0 items-center justify-center rounded-full bg-accent">
+                    <value.Icon className="size-11 text-primary" />
+                  </div>
+                  <h4 className="font-serif text-2xl lg:text-3xl font-bold text-primary leading-tight text-balance">
+                    {value.title}
+                  </h4>
                 </div>
-                <p className="text-muted-foreground leading-relaxed md:text-justify">
+                <p className="text-base leading-relaxed text-muted-foreground">
                   {value.description}
                 </p>
-              </div>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
 
         {/* Origin Story Card */}

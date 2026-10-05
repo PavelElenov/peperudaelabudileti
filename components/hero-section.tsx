@@ -52,13 +52,15 @@ export function HeroSection() {
         </div>
 
         {/* Tagline */}
-        <p className="font-[family-name:var(--font-script)] text-xl md:text-2xl text-primary/80">
-          {t.hero.tagline}
+        <p className="mt-6 flex flex-wrap justify-center gap-x-6 md:gap-x-10 gap-y-2 font-[family-name:var(--font-display)] text-xl md:text-3xl font-extrabold italic uppercase tracking-wide text-primary">
+          {t.hero.tagline.split(" ").map((word) => (
+            <span key={word}>{word}</span>
+          ))}
         </p>
       </div>
 
       {/* Main content area with quote */}
-      <div className="relative flex-1 flex flex-col items-center justify-center px-6 pb-32">
+      <div className="relative flex-1 flex flex-col items-center justify-center px-6 pt-10 md:pt-14 pb-32">
         <div className="text-center max-w-3xl mx-auto">
           <h1 className="font-serif text-2xl md:text-3xl lg:text-4xl text-primary leading-relaxed text-balance">
             <span className="text-primary font-bold">Peperuda</span>{t.about.butterflyBefore}
