@@ -40,9 +40,9 @@ export function ProgramSection() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent" />
           </div>
-          <div className="space-y-5">
-            <p className="text-lg text-muted-foreground leading-relaxed">{t.program.intro1}</p>
-            <p className="text-muted-foreground leading-relaxed">{t.program.intro2}</p>
+          <div className="flex flex-col gap-5 text-base md:text-lg leading-relaxed text-muted-foreground">
+            <p>{t.program.intro1}</p>
+            <p>{t.program.intro2}</p>
           </div>
         </div>
 
