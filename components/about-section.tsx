@@ -1,6 +1,7 @@
 "use client"
 
 import Image from "next/image"
+import { cn } from "@/lib/utils"
 import { useLanguage } from "@/lib/i18n"
 
 function DottedCircleIcon({ className }: { className?: string }) {
@@ -107,7 +108,7 @@ export function AboutSection() {
   const values = [
     { Icon: DottedCircleIcon, title: t.about.values.one.title, description: t.about.values.one.description },
     { Icon: HandsIcon, title: t.about.values.community.title, description: t.about.values.community.description },
-    { Icon: ButterflyIcon, title: t.about.values.setFree.title, description: t.about.values.setFree.description },
+    { Icon: ButterflyIcon, title: t.about.values.setFree.title, description: t.about.values.setFree.description, iconClassName: "rotate-12" },
     { Icon: BulbPlantIcon, title: t.about.values.sustainability.title, description: t.about.values.sustainability.description },
   ]
 
@@ -147,8 +148,8 @@ export function AboutSection() {
           <div className="relative">
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
               <Image
-                src="/images/about-handwork.png"
-                alt="Hands stitching a patchwork made from recycled fabric scraps"
+                src="/images/about-young-hands.png"
+                alt="Hands of two young women with different skin tones stitching recycled fabric together"
                 fill
                 className="object-cover"
               />
@@ -198,7 +199,7 @@ export function AboutSection() {
               >
                 <div className="flex items-center gap-4">
                   <div className="flex size-16 shrink-0 items-center justify-center rounded-full bg-accent">
-                    <value.Icon className="size-11 text-primary" />
+                    <value.Icon className={cn("size-11 text-primary", "iconClassName" in value && value.iconClassName)} />
                   </div>
                   <h4 className="font-serif text-2xl lg:text-3xl font-bold text-primary leading-tight text-balance">
                     {value.title}
