@@ -25,34 +25,23 @@ export function HeroSection() {
       </div>
 
       {/* Top section with logo */}
-      <div className="relative pt-28 text-center">
-        {/* Butterfly logo */}
-        <div className="flex justify-center mb-4">
-          <Image
-            src="/images/peperuda-logo.jpeg"
-            alt="Peperuda butterfly logo"
-            width={96}
-            height={96}
-            className="h-20 w-20 md:h-24 md:w-24 object-contain mix-blend-multiply"
-            priority
-          />
-        </div>
-
+      <div className="relative pt-50 text-center">
         {/* Decorative line with logo */}
         <div className="flex items-center justify-center gap-6 mb-2">
           <div className="h-px w-20 md:w-32 bg-primary/50" />
           <Image
             src="/images/peperuda-logo.svg"
-            alt="Peperuda butterfly logo"
-            width={220}
-            height={120}
-            className="w-35 md:w-50 object-contain mix-blend-multiply"
+            alt="Peperuda"
+            width={300}
+            height={164}
+            className="w-48 sm:w-56 md:w-64 object-contain mix-blend-multiply"
+            priority
           />
           <div className="h-px w-20 md:w-32 bg-primary/50" />
         </div>
 
         {/* Tagline */}
-        <p className="mt-6 flex flex-wrap justify-center gap-x-8 md:gap-x-12 gap-y-2 font-script text-4xl md:text-5xl leading-tight text-primary">
+        <p className="mt-4 flex flex-wrap justify-center gap-x-6 md:gap-x-10 gap-y-2 font-script text-2xl md:text-3xl leading-tight text-primary">
           {t.hero.tagline.split(" ").map((word) => (
             <span key={word}>{word}</span>
           ))}
@@ -63,7 +52,7 @@ export function HeroSection() {
       <div className="relative flex-1 flex flex-col items-center justify-center px-6 pt-10 md:pt-14 pb-32">
         <div className="text-center max-w-3xl mx-auto">
           <h1 className="font-serif text-2xl md:text-3xl lg:text-4xl text-primary leading-relaxed text-balance">
-            <span className="text-primary font-bold">Peperuda</span>{t.about.butterflyBefore}
+            <span className="text-primary font-bold text-[1.12em]">Peperuda</span>{t.about.butterflyBefore}
           </h1>
         </div>
 

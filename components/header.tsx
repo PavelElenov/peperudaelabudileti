@@ -24,13 +24,13 @@ export function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-sm border-b border-border">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
         <div className="flex lg:flex-1">
-          <Link href="/" className="flex items-center gap-2">
+          <Link href="/" aria-label="Peperuda home" className="flex items-center">
             <Image
-              src="/images/peperuda-logo.svg"
-              alt="Peperuda butterfly logo"
-              width={100}
+              src="/images/peperuda-butterfly-transparent.png"
+              alt=""
+              width={48}
               height={48}
-              className="h-12 object-contain mix-blend-multiply"
+              className="size-10 object-contain"
             />
           </Link>
         </div>

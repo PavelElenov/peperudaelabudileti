@@ -1,9 +1,6 @@
 "use client"
 
 import Image from "next/image"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Sparkles, Award, Scissors, Heart } from "lucide-react"
 import { useLanguage } from "@/lib/i18n"
 
 export function ProgramSection() {
@@ -33,8 +30,8 @@ export function ProgramSection() {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-16">
           <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
             <Image
-              src="/images/metamorphosis-program.png"
-              alt="Hands sewing colorful fabric on a sewing machine"
+              src="/images/metamorphosis-young-hands.png"
+              alt="Hands of two young women with different skin tones guiding fabric through a sewing machine"
               fill
               className="object-cover"
             />
@@ -48,9 +45,6 @@ export function ProgramSection() {
 
         {/* Every small step matters */}
         <div className="max-w-4xl mx-auto text-center mb-16">
-          <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-accent mb-5">
-            <Award className="w-7 h-7 text-primary" strokeWidth={1.5} />
-          </div>
           <h3 className="font-serif text-2xl lg:text-3xl font-semibold text-foreground mb-6">
             {t.program.stepsTitle}
           </h3>
@@ -112,7 +106,6 @@ export function ProgramSection() {
               </li>
             ))}
           </ul>
-          <p className="text-foreground leading-relaxed mb-8">{t.program.closingText}</p>
         </div>
       </div>
     </section>

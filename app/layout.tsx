@@ -1,27 +1,30 @@
 import type { Metadata } from 'next'
-import { Great_Vibes, Lora, Montserrat } from 'next/font/google'
+import localFont from 'next/font/local'
 import { Analytics } from '@vercel/analytics/next'
 import { LanguageProvider } from '@/lib/i18n'
 import './globals.css'
 
-// Closest Cyrillic-capable matches for the Canva flyer fonts: Garet, Cooper BT, Halimum.
-const montserrat = Montserrat({
-  subsets: ["latin", "cyrillic"],
-  weight: ["400", "500", "600", "700", "800"],
-  style: ["normal", "italic"],
-  variable: '--font-montserrat'
-});
-const lora = Lora({
-  subsets: ["latin", "cyrillic"],
-  weight: ["400", "500", "600", "700"],
-  style: ["normal", "italic"],
-  variable: '--font-lora'
-});
-const greatVibes = Great_Vibes({
-  subsets: ["latin", "cyrillic"],
-  weight: "400",
-  variable: '--font-great-vibes'
-});
+// Local copies keep font loading independent of Google Fonts and Turbopack URL parsing.
+const montserrat = localFont({
+  src: './fonts/Montserrat-Variable.ttf',
+  weight: '100 900',
+  display: 'swap',
+  variable: '--font-montserrat',
+})
+const lora = localFont({
+  src: [
+    { path: './fonts/Lora-Variable.ttf', weight: '400 700', style: 'normal' },
+    { path: './fonts/Lora-Italic-Variable.ttf', weight: '400 700', style: 'italic' },
+  ],
+  display: 'swap',
+  variable: '--font-lora',
+})
+const greatVibes = localFont({
+  src: './fonts/GreatVibes-Regular.ttf',
+  weight: '400',
+  display: 'swap',
+  variable: '--font-great-vibes',
+})
 
 export const metadata: Metadata = {
   title: 'Peperuda | Empowering Women Together',
@@ -30,19 +33,19 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: '/icon-light-32x32.png',
+        url: '/peperuda-logo.jpeg',
         media: '(prefers-color-scheme: light)',
       },
       {
-        url: '/icon-dark-32x32.png',
+        url: '/peperuda-logo.jpeg',
         media: '(prefers-color-scheme: dark)',
       },
       {
-        url: '/icon.svg',
+        url: '/peperuda-logo.svg',
         type: 'image/svg+xml',
       },
     ],
-    apple: '/apple-icon.png',
+    apple: '/peperuda-logo.jpeg',
   },
 }
 

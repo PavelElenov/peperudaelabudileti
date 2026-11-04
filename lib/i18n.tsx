@@ -119,8 +119,6 @@ export const translations = {
         "With one food package.",
         "With one helping hand.",
       ],
-      closingText:
-        "When we give a woman the opportunity to develop, we are not only helping her - but helping her to take the next step. By supporting “Metamorphosis” you can do that. A little help can leave a big mark!",
     },
     donate: {
       eyebrow: "Support Our Mission",
@@ -177,7 +175,7 @@ export const translations = {
       addressLabel: "Address",
       address: "Sliven\nDame Gruev 7",
       workingTimeLabel: "Monday - Friday",
-      workingTime: "09:00 - 17:00 or 11:00 - 15:00",
+      workingTime: "09:00 - 16:00",
       phoneLabel: "Phone",
       emailLabel: "Email",
       followUs: "Follow Us",
@@ -234,7 +232,7 @@ export const translations = {
     },
     about: {
       eyebrow: "За нас",
-      butterflyBefore: " означава пеперуда. Това е място, където жените могат да дойдат като гъсеници — и един ден да разперят криле и да полетят като пеперуди.",
+      butterflyBefore: " е място, където жените могат да дойдат като гъсеници - и един ден да разперят криле и да полетят като пеперуди.",
       intro1:
         "Пеперуда е място, където млади жени и майки могат да научат практически умения и знания, които ще им позволят да намерят по-добри възможности за работа и да се грижат за децата си.",
       intro2:
@@ -251,7 +249,7 @@ export const translations = {
         one: {
           title: "Личността",
           description:
-            "Искаме да видим всяка отделна жена и всяко отделно семейство сред тълпата. Всеки човек е ценен и във всяка жена има толкова много красота и потенциал.",
+            "Искаме да видим всяка отделна ж��на и всяко отделно семейство сред тълпата. Всеки човек е ценен и във всяка жена има толкова много красота и потенциал.",
         },
         community: {
           title: "Общност",
@@ -319,15 +317,13 @@ export const translations = {
         { amount: "60 €", label: "възнаграждение на две шивачки за един месец" },
       ],
       closingLines: [
-        "Не всяка промяна започва с голяма крачка.",
+        "��е всяка промяна започва с голяма крачка.",
         "Понякога започва с един урок.",
         "С един нов научен шев.",
         "С едно посещение.",
         "С един пакет храна.",
         "С една подадена ръка.",
       ],
-      closingText:
-        "Защото когато дадем на една жена възможност да се развива, ние не помагаме само на нея. Подкрепяйки „Метаморфоза“, вие помагате на една жена да направи своята следваща крачка. Малката помощ оставя голяма следа!",
     },
     donate: {
       eyebrow: "Подкрепете нашата мисия",
@@ -384,7 +380,7 @@ export const translations = {
       addressLabel: "Адрес",
       address: "гр. Сливен\nж.к. Даме Груев 7",
       workingTimeLabel: "Понеделник - Петък",
-      workingTime: "09:00 - 17:00 или 11:00 - 17:00",
+      workingTime: "09:00 - 16:00",
       phoneLabel: "Телефон",
       emailLabel: "Имейл",
       followUs: "Последвайте ни",
@@ -421,7 +417,15 @@ export const translations = {
   },
 } as const
 
-export type Translation = (typeof translations)["en"]
+type WidenTranslation<T> = T extends string
+  ? string
+  : T extends readonly (infer Item)[]
+    ? readonly WidenTranslation<Item>[]
+    : T extends object
+      ? { [Key in keyof T]: WidenTranslation<T[Key]> }
+      : T
+
+export type Translation = WidenTranslation<(typeof translations)["en"]>
 
 type LanguageContextValue = {
   lang: Language
