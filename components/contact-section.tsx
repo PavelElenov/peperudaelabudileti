@@ -1,23 +1,41 @@
 "use client"
 
-import { useState } from "react"
+import { useActionState, useState } from "react"
 import { Button } from "@/components/ui/button"
-import { Mail, Phone, MapPin, Send, Clock } from "lucide-react"
+import { Mail, Phone, MapPin, Send, Clock, Loader2 } from "lucide-react"
 import { useLanguage } from "@/lib/i18n"
+import { sendContactMessage, type ContactFormState } from "@/app/actions/contact"
+
+const emptyForm = {
+  name: "",
+  email: "",
+  subject: "",
+  message: "",
+}
 
 export function ContactSection() {
   const { t } = useLanguage()
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  })
+  const [formData, setFormData] = useState(emptyForm)
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    console.log("Form submitted:", formData)
-  }
+  const [state, formAction, pending] = useActionState(
+    async (prevState: ContactFormState, data: FormData) => {
+      const result = await sendContactMessage(prevState, data)
+      if (result.status === "success") {
+        setFormData(emptyForm)
+      }
+      return result
+    },
+    { status: "idle" } as ContactFormState
+  )
+
+  const statusMessage =
+    state.status === "success"
+      ? t.contact.sendSuccess
+      : state.status === "invalid"
+        ? t.contact.sendInvalid
+        : state.status === "error"
+          ? t.contact.sendError
+          : ""
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
@@ -143,7 +161,13 @@ export function ContactSection() {
             <h3 className="font-serif text-2xl font-semibold text-foreground mb-6">
               {t.contact.sendTitle}
             </h3>
-            <form onSubmit={handleSubmit} className="space-y-5">
+            <form action={formAction} className="space-y-5">
+              {/* Honeypot field for bots: hidden from people and screen readers */}
+              <div aria-hidden="true" className="absolute left-[-9999px] h-0 w-0 overflow-hidden">
+                <label htmlFor="website">Website</label>
+                <input type="text" id="website" name="website" tabIndex={-1} autoComplete="off" />
+              </div>
+
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-muted-foreground mb-2">
                   {t.contact.nameLabel}
@@ -212,10 +236,23 @@ export function ContactSection() {
                 />
               </div>
 
-              <Button type="submit" className="w-full" size="lg">
-                <Send className="mr-2 h-5 w-5" />
-                {t.contact.sendButton}
+              <Button type="submit" className="w-full" size="lg" disabled={pending}>
+                {pending ? (
+                  <Loader2 className="mr-2 h-5 w-5 animate-spin" />
+                ) : (
+                  <Send className="mr-2 h-5 w-5" />
+                )}
+                {pending ? t.contact.sending : t.contact.sendButton}
               </Button>
+
+              <p
+                aria-live="polite"
+                className={`text-sm text-center min-h-5 ${
+                  state.status === "success" ? "text-primary" : "text-destructive"
+                }`}
+              >
+                {pending ? "" : statusMessage}
+              </p>
             </form>
           </div>
         </div>

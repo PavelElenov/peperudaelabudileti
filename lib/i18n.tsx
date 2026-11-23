@@ -192,6 +192,10 @@ export const translations = {
       messageLabel: "Message",
       messagePlaceholder: "How can we help you?",
       sendButton: "Send Message",
+      sending: "Sending...",
+      sendSuccess: "Thank you! Your message has been sent. We will get back to you soon.",
+      sendInvalid: "Please fill in all fields with valid information.",
+      sendError: "Something went wrong and your message was not sent. Please try again or email us directly.",
     },
     footer: {
       tagline: "Empowering women through community, freedom, and sustainable growth.",
@@ -397,6 +401,10 @@ export const translations = {
       messageLabel: "Съобщение",
       messagePlaceholder: "Как можем да ви помогнем?",
       sendButton: "Изпрати съобщение",
+      sending: "Изпращане...",
+      sendSuccess: "Благодарим ви! Съобщението ви беше изпратено. Ще се свържем с вас скоро.",
+      sendInvalid: "Моля, попълнете всички полета с валидна информация.",
+      sendError: "Възникна грешка и съобщението ви не беше изпратено. Моля, опитайте отново или ни пишете директно по имейл.",
     },
     footer: {
       tagline: "Даваме сила на жените чрез общност, свобода и устойчив растеж.",
@@ -602,6 +610,10 @@ export const translations = {
       messageLabel: "Nachricht",
       messagePlaceholder: "Wie können wir Ihnen helfen?",
       sendButton: "Nachricht senden",
+      sending: "Wird gesendet...",
+      sendSuccess: "Vielen Dank! Ihre Nachricht wurde gesendet. Wir melden uns bald bei Ihnen.",
+      sendInvalid: "Bitte füllen Sie alle Felder mit gültigen Angaben aus.",
+      sendError: "Etwas ist schiefgelaufen, Ihre Nachricht wurde nicht gesendet. Bitte versuchen Sie es erneut oder schreiben Sie uns direkt eine E-Mail.",
     },
     footer: {
       tagline: "Wir stärken Frauen durch Gemeinschaft, Freiheit und nachhaltiges Wachstum.",
