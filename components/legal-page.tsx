@@ -52,7 +52,7 @@ const documents: Record<Language, Record<LegalDocumentKind, LegalDocument>> = {
           heading: "Analytics and language preference",
           paragraphs: [
             "We use Vercel Analytics to understand general website usage. In providing this service, Vercel may process technical information such as pages visited, referring page, browser or device details, and approximate region. Vercel's own privacy notice applies to its processing.",
-            "Your English or Bulgarian language selection is saved in local storage in your browser so the site can remember it. This preference is not sent to Peperuda.",
+            "Your language selection (English, Bulgarian, or German) is saved in local storage in your browser so the site can remember it. This preference is not sent to Peperuda.",
           ],
         },
         {
@@ -167,7 +167,7 @@ const documents: Record<Language, Record<LegalDocumentKind, LegalDocument>> = {
           heading: "Анализ на посещенията и избор на език",
           paragraphs: [
             "Използваме Vercel Analytics, за да разбираме общото използване на сайта. За предоставянето на услугата Vercel може да обработва техническа информация, например посетени страници, източник на посещението, данни за браузъра или устройството и приблизителен регион. За тази обработка се прилага собствената политика за поверителност на Vercel.",
-            "Избраният от вас език — английски или български — се запазва в локалното хранилище на браузъра, за да може сайтът да го запомни. Това предпочитание не се изпраща до „Пеперуда“.",
+            "Избраният от вас език — английски, български или немски — се запазва в локалното хранилище на браузъра, за да може сайтът да го запомни. Това предпочитание не се изпраща до „Пеперуда“.",
           ],
         },
         {
@@ -257,6 +257,127 @@ const documents: Record<Language, Record<LegalDocumentKind, LegalDocument>> = {
       contactHeading: "Контакт",
     },
   },
+  de: {
+    privacy: {
+      title: "Datenschutzerklärung",
+      eyebrow: "Informationen zur Website",
+      lastUpdated: "Zuletzt aktualisiert: 4. November 2026",
+      intro:
+        "Diese Erklärung beschreibt, wie mit Informationen umgegangen wird, wenn Sie die Website von Peperuda besuchen oder unser Team kontaktieren.",
+      sections: [
+        {
+          heading: "Wer wir sind",
+          paragraphs: [
+            "Peperuda ist eine Gemeinschaftsinitiative mit Sitz in Sliven, Bulgarien. Bei Fragen oder Anliegen zum Datenschutz kontaktieren Sie uns bitte unter der unten angegebenen E-Mail-Adresse.",
+          ],
+        },
+        {
+          heading: "Informationen, die Sie uns geben",
+          paragraphs: [
+            "Wenn Sie uns per E-Mail kontaktieren, erhalten wir Ihre E-Mail-Adresse und die Informationen, die Sie in Ihre Nachricht aufnehmen. Wir verwenden sie, um Ihre Anfrage zu beantworten und die notwendige Korrespondenz aufzubewahren.",
+            "Das auf dieser Website angezeigte Kontaktformular ist derzeit nicht mit einem Nachrichtendienst verbunden und übermittelt keine Eingaben an Peperuda. Bitte schreiben Sie uns stattdessen direkt eine E-Mail und geben Sie keine sensiblen Informationen in das Formular ein.",
+          ],
+        },
+        {
+          heading: "Analyse und Spracheinstellung",
+          paragraphs: [
+            "Wir verwenden Vercel Analytics, um die allgemeine Nutzung der Website zu verstehen. Bei der Bereitstellung dieses Dienstes kann Vercel technische Informationen wie besuchte Seiten, verweisende Seite, Browser- oder Gerätedaten und die ungefähre Region verarbeiten. Für diese Verarbeitung gilt die Datenschutzerklärung von Vercel.",
+            "Ihre Sprachauswahl (Englisch, Bulgarisch oder Deutsch) wird im lokalen Speicher Ihres Browsers gespeichert, damit sich die Website daran erinnert. Diese Einstellung wird nicht an Peperuda übermittelt.",
+          ],
+        },
+        {
+          heading: "Spenden und externe Dienste",
+          paragraphs: [
+            "Spenden können über die auf dieser Website angegebene Bankverbindung oder über Dienste Dritter wie PayPal und Revolut erfolgen. Diese Anbieter verarbeiten Zahlungs- und Kontoinformationen gemäß ihren eigenen Datenschutzerklärungen. Peperuda erhält über diese Website keine Zahlungsdaten von Ihnen.",
+            "Für Links zu sozialen Netzwerken und anderen externen Websites gelten die Datenschutzbestimmungen der jeweiligen Dienste. Wir haben keinen Einfluss auf deren Umgang mit Daten.",
+          ],
+        },
+        {
+          heading: "Weitergabe und Speicherdauer",
+          paragraphs: [
+            "Wir verkaufen keine personenbezogenen Daten. E-Mail-Korrespondenz und technische Informationen können von Anbietern verarbeitet werden, die für den Betrieb unserer E-Mail-, Hosting- und Analysedienste erforderlich sind, oder von einem Drittanbieter, den Sie selbst nutzen.",
+            "Wir bewahren Korrespondenz nur so lange auf, wie es für die Beantwortung und die Erfüllung geltender Aufbewahrungspflichten erforderlich ist.",
+          ],
+        },
+        {
+          heading: "Ihre Wahlmöglichkeiten und Rechte",
+          paragraphs: [
+            "Je nach anwendbarem Recht können Sie Auskunft über Ihre personenbezogenen Daten, deren Berichtigung oder Löschung verlangen oder uns bitten, bestimmte Verarbeitungen einzuschränken oder zu beenden. Sie können uns über die unten angegebene Adresse kontaktieren. Sie haben außerdem das Recht, sich bei Ihrer Datenschutzaufsichtsbehörde zu beschweren; in Bulgarien ist dies die Kommission für den Schutz personenbezogener Daten.",
+          ],
+        },
+        {
+          heading: "Änderungen dieser Erklärung",
+          paragraphs: [
+            "Wir können diese Erklärung aktualisieren, wenn sich die Website oder unsere Praktiken ändern. Das Datum oben auf der Seite zeigt, wann sie zuletzt aktualisiert wurde.",
+          ],
+        },
+      ],
+      contactLabel: "Fragen zum Datenschutz?",
+      homeLink: "Zurück zur Startseite",
+      otherPageLabel: "Weitere rechtliche Seite lesen",
+      privacyLabel: "Datenschutzerklärung",
+      termsLabel: "Nutzungsbedingungen",
+      contactHeading: "Kontakt",
+    },
+    terms: {
+      title: "Nutzungsbedingungen",
+      eyebrow: "Nutzung dieser Website",
+      lastUpdated: "Zuletzt aktualisiert: 4. November 2026",
+      intro:
+        "Diese Bedingungen gelten für Ihre Nutzung der Website von Peperuda. Mit der Nutzung der Website stimmen Sie ihnen zu. Wenn Sie nicht einverstanden sind, nutzen Sie die Website bitte nicht weiter.",
+      sections: [
+        {
+          heading: "Zweck und zulässige Nutzung",
+          paragraphs: [
+            "Diese Website informiert über Peperuda, unsere Arbeit in der Gemeinschaft und Möglichkeiten, sich zu engagieren oder uns zu unterstützen. Sie dürfen sie nur für rechtmäßige Zwecke und auf eine Weise nutzen, die die Website oder andere Besucher nicht beeinträchtigt.",
+          ],
+        },
+        {
+          heading: "Inhalte der Website",
+          paragraphs: [
+            "Sofern nicht anders angegeben, werden der Name Peperuda, die Texte und das visuelle Erscheinungsbild von oder für Peperuda bereitgestellt. Bitte fragen Sie um Erlaubnis, bevor Sie sie vervielfältigen oder kommerziell nutzen. Diese Bedingungen schränken gesetzlich erlaubte Nutzungen nicht ein.",
+          ],
+        },
+        {
+          heading: "Spenden und Dienste Dritter",
+          paragraphs: [
+            "Spendeninformationen und Zahlungsoptionen über Dritte werden bereitgestellt, damit Besucher die Arbeit von Peperuda unterstützen können. Banküberweisungen und Zahlungen über Dienste wie PayPal oder Revolut werden vom jeweiligen Anbieter abgewickelt und unterliegen dessen Bedingungen und Anweisungen.",
+            "Programmbeschreibungen erläutern unsere aktuelle Arbeit und unsere Pläne; sie garantieren kein bestimmtes Ergebnis. Bei Fragen zu einer Spende über einen externen Dienst wenden Sie sich für Zahlungsfragen an diesen Dienst und für Fragen zum Programm an Peperuda.",
+          ],
+        },
+        {
+          heading: "Externe Links",
+          paragraphs: [
+            "Die Website kann auf Dienste und Websites verlinken, die von anderen betrieben werden. Wir haben keinen Einfluss auf deren Inhalte, Verfügbarkeit, Bedingungen oder Datenschutzpraktiken und übernehmen dafür keine Verantwortung. Für die Nutzung dieser Dienste gelten deren eigene Bedingungen.",
+          ],
+        },
+        {
+          heading: "Informationen und Haftung",
+          paragraphs: [
+            "Wir bemühen uns, die Informationen auf dieser Website korrekt und aktuell zu halten, sie dienen jedoch der allgemeinen Information und können sich ändern. Soweit gesetzlich zulässig, garantiert Peperuda nicht, dass die Website jederzeit verfügbar oder fehlerfrei ist. Nichts in diesen Bedingungen schließt Rechte oder Schutzmaßnahmen aus, die nach geltendem Recht nicht ausgeschlossen werden können.",
+          ],
+        },
+        {
+          heading: "Änderungen und Kontakt",
+          paragraphs: [
+            "Wir können diese Bedingungen überarbeiten, wenn sich die Website oder unsere Arbeit ändert. Die aktuelle Fassung wird auf dieser Seite veröffentlicht. Bei Fragen kontaktieren Sie uns bitte unter der unten angegebenen E-Mail-Adresse.",
+          ],
+        },
+      ],
+      contactLabel: "Fragen zu diesen Bedingungen?",
+      homeLink: "Zurück zur Startseite",
+      otherPageLabel: "Weitere rechtliche Seite lesen",
+      privacyLabel: "Datenschutzerklärung",
+      termsLabel: "Nutzungsbedingungen",
+      contactHeading: "Kontakt",
+    },
+  },
+}
+
+const providerDetails: Record<Language, { label: string; link: string }> = {
+  en: { label: "Provider details: ", link: "Vercel Privacy Policy" },
+  bg: { label: "Информация за доставчика: ", link: "Политика за поверителност на Vercel" },
+  de: { label: "Angaben zum Anbieter: ", link: "Datenschutzerklärung von Vercel" },
 }
 
 export function LegalPage({ kind }: { kind: LegalDocumentKind }) {
@@ -318,14 +439,14 @@ export function LegalPage({ kind }: { kind: LegalDocumentKind }) {
 
           {kind === "privacy" && (
             <p className="mt-8 text-sm text-muted-foreground">
-              {lang === "en" ? "Provider details: " : "Информация за доставчика: "}
+              {providerDetails[lang].label}
               <a
                 href="https://vercel.com/legal/privacy-policy"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-medium text-primary underline-offset-4 hover:underline"
               >
-                {lang === "en" ? "Vercel Privacy Policy" : "Политика за поверителност на Vercel"}
+                {providerDetails[lang].link}
               </a>
             </p>
           )}

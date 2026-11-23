@@ -2,7 +2,7 @@
 
 import { createContext, useContext, useEffect, useState, type ReactNode } from "react"
 
-export type Language = "en" | "bg"
+export type Language = "en" | "bg" | "de"
 
 export const translations = {
   en: {
@@ -205,7 +205,7 @@ export const translations = {
       volunteer: "Volunteer",
       shop: "Shop",
       contact: "Contact",
-      rights: "2024 Peperuda. All rights reserved.",
+      rights: "2026 Peperuda. All rights reserved.",
       privacy: "Privacy Policy",
       terms: "Terms of Service",
     },
@@ -410,9 +410,214 @@ export const translations = {
       volunteer: "Доброволчество",
       shop: "Магазин",
       contact: "Контакти",
-      rights: "2024 Пеперуда. Всички права запазени.",
+      rights: "2026 Пеперуда. Всички права запазени.",
       privacy: "Политика за поверителност",
       terms: "Общи условия",
+    },
+  },
+  de: {
+    nav: {
+      home: "Startseite",
+      about: "Über uns",
+      program: "Programm",
+      donate: "Spenden",
+      contact: "Kontakt",
+      shop: "Shop",
+      openMenu: "Hauptmenü öffnen",
+    },
+    hero: {
+      tagline: "Komm! Sei! Flieg!",
+      quoteBefore: "Aus dem, was alt und kaputt ist, ",
+      quoteHighlight: "entsteht etwas Schönes",
+      quoteAfter: ".",
+      intro:
+        "Peperuda ist ein Ort, an dem junge Frauen und Mütter praktische Fähigkeiten erlernen und Wissen erwerben können, das ihnen bessere Chancen auf dem Arbeitsmarkt eröffnet und ihnen ermöglicht, für ihre Kinder zu sorgen.",
+      discoverMission: "Unsere Mission entdecken",
+      supportUs: "Unterstützen Sie uns",
+    },
+    about: {
+      eyebrow: "Über uns",
+      butterflyBefore: " bedeutet Schmetterling. Es ist ein Ort, an den Frauen als Raupen kommen können – um eines Tages ihre Flügel auszubreiten und wie Schmetterlinge zu fliegen.",
+      intro1:
+        "Peperuda ist ein Ort, an dem junge Frauen und Mütter praktische Fähigkeiten erlernen und Wissen erwerben können, das ihnen bessere Chancen auf dem Arbeitsmarkt eröffnet und ihnen ermöglicht, für ihre Kinder zu sorgen.",
+      intro2:
+        "Viele finden aufgrund geringer Bildung und schwieriger Lebensumstände in ihren Gemeinden keine Arbeit. Deshalb verlassen sie das Land auf der Suche nach einem Job – und müssen ihre Kinder oft zurücklassen.",
+      intro3:
+        "Peperuda möchte Hoffnung schenken, neue Perspektiven eröffnen und Familien die Chance geben, zusammenzubleiben.",
+      intro4:
+        "Aus alten Stoffen und anderen wiederverwertbaren Materialien entstehen neue, handgemachte Produkte. Aus dem, was alt und kaputt ist, entsteht etwas Schönes.",
+      slivenTitle: "Was geschieht in Sliven, Bulgarien?",
+      slivenText:
+        " Sliven gilt als bedeutendes Zentrum des Menschenhandels in Bulgarien. Sexuelle Ausbeutung ist die vorherrschende Form des Menschenhandels in der Region; viele Betroffene werden in andere europäische Länder verschleppt. Zudem steht die Stadt vor großen sozioökonomischen Herausforderungen: Sie hat den höchsten Anteil an Einwohnern in Bulgarien, die höchstens einen Grundschulabschluss haben, und Arbeitslosigkeit sowie Armut liegen über dem Landesdurchschnitt.",
+      valuesTitle: "Unsere Grundwerte",
+      values: {
+        one: {
+          title: "Die Einzelne",
+          description:
+            "Wir wollen jede einzelne Frau und jede einzelne Familie inmitten der Menge sehen. Jeder Mensch ist wertvoll, und in jeder Frau steckt so viel Schönheit und Potenzial.",
+        },
+        community: {
+          title: "Gemeinschaft",
+          description:
+            "Wir wollen die Gemeinschaft sehen, zu der jede Frau gehört. Die ganzheitliche Stärkung einer Frau wirkt sich auf ihre gesamte Gemeinschaft aus.",
+        },
+        setFree: {
+          title: "Freiheit",
+          description:
+            "Wir wollen den Wert und das Potenzial in jeder Frau entdecken, hervorbringen und fördern und sie befähigen, es weiterzugeben und in Freiheit voranzugehen.",
+        },
+        sustainability: {
+          title: "Nachhaltigkeit",
+          description:
+            "Wir wollen Nachhaltigkeit in unseren Produkten sehen und nachhaltiges Wachstum und die Entwicklung von Frauen unterstützen – Wachstum, das dauerhaft auf ihre Kinder, Beziehungen, ihre Gemeinschaft und die ganze Gesellschaft wirkt.",
+        },
+      },
+      stats: {
+        education: "Niedriges Bildungsniveau",
+        teenMothers: "Minderjährige Mütter",
+        unemployment: "Arbeitslosenquote",
+        poverty: "Armutsquote",
+      },
+      originTitle: "Ein Moment, in dem ein Traum geboren wurde",
+      origin1:
+        "Eine junge Frau steht vor einem Geschäft. Unsere Blicke treffen sich. Ich ertappe mich dabei, wie ich schnell wegschaue, in der Hoffnung, dass sie nicht auf mich zukommt. Ich wollte doch nur schnell einkaufen. Aus dem Augenwinkel sehe ich, wie sie näher kommt. Ihr Haar ist verfilzt, ihr Gesichtsausdruck leer und doch so durchdringend. Auf ihrer Kleidung und ihren Händen liegen Schichten von Schmutz. Ich bleibe stehen. Plötzlich bin ich hellwach, und bevor sie mich um Geld bitten kann, frage ich sie:",
+      originQuote: "„Wie heißt du?“",
+      origin2:
+        "Ihr ganzes Wesen verändert sich augenblicklich. In ihren Mundwinkeln erscheint ein Lächeln, und sie sagt leise ihren Namen. Mein Blick wandert zu ihrem Bauch – sie ist hochschwanger.",
+      origin3:
+        "Bin ich nicht genau deshalb nach Bulgarien gezogen? Für junge Mütter, sogar minderjährige Mütter? Ich frage sie, wann der Geburtstermin ist, wie es ihr körperlich geht, ob sie schon andere Kinder hat. Ich kaufe ihr Brot und Bananen. Um Geld hat sie mich nicht mehr gebeten.",
+      origin4: "Nein – dass jemand nach ihrem Namen fragt, ist ihr mehr wert als Geld.",
+      originHighlight: "Jemand sieht sie. Sie ist wichtig. Sie ist jemand.",
+      origin5:
+        "Ich schäme mich für meine erste Reaktion, und doch bin ich dankbar, dass ich mich in diesem Moment daran erinnert habe, was wirklich zählt.",
+      origin6:
+        "Was ist meine Aufgabe, mein Puzzleteil, mit dem ich jungen Müttern helfen kann, Freiheit zu finden und die Würde zurückzugewinnen, die ihnen zusteht?",
+    },
+    program: {
+      eyebrow: "Unser Programm",
+      title: "Metamorphose",
+      subtitle: "Kleine Hilfe hinterlässt große Spuren!",
+      intro1:
+        "„Metamorphose“ ist ein Programm für Frauen und Mütter, die eine schwierige Zeit in ihrem Leben durchmachen, aber ihren Wunsch nicht aufgegeben haben, zu wachsen, zu lernen und eine bessere Zukunft für sich und ihre Kinder aufzubauen. Es richtet sich an Frauen, die ihr Wissen, ihre Fähigkeiten und ihre Möglichkeiten für ein selbstständigeres Leben weiterentwickeln möchten.",
+      intro2:
+        "Manchmal braucht es nur eine einzige Chance, um das eigene Leben zu verändern. Deshalb verbindet „Metamorphose“ Unterstützung für die Familie mit der Möglichkeit zur Weiterentwicklung. Die Teilnehmerinnen können an Schulungen und Bildungsangeboten teilnehmen und praktische Fähigkeiten erwerben – zum Beispiel Nähen, Stricken und andere nützliche Tätigkeiten.",
+      stepsTitle: "Jeder kleine Schritt zählt",
+      steps1:
+        "Für jeden Besuch und jede aktive Teilnahme erhalten die Frauen „Peperuda-Punkte“. Diese Punkte können gegen Produkte aus verschiedenen Kategorien eingetauscht werden, die die Familie braucht – Dinge des täglichen Bedarfs, Lebensmittel und Hygieneartikel, Kinderartikel, Kleidung und mehr. So zählt jeder Besuch.",
+      steps2:
+        "Eine Frau kommt, um etwas Neues zu lernen. Sie wirkt an der Herstellung neuer handgemachter Produkte mit und erhält Punkte, mit denen sie ihrer Familie helfen kann. Sie kommt wieder, lernt dazu und wird besser. Mit jedem weiteren Schritt gewinnt sie mehr Vertrauen in ihre Fähigkeiten.",
+      stepsHighlight: "Das ist „Metamorphose“.",
+      impact1:
+        "Diese Veränderung ist dank Ihnen möglich! Jede Spende verwandelt eine kleine Hilfe in eine große Veränderung.",
+      impact2:
+        "Hinter jedem „Peperuda-Punkt“ steht echte Unterstützung. Mit Ihrer Spende können wir die nötigen Produkte, Materialien und Rahmenbedingungen bereitstellen, damit das Programm mehr Frauen und Familien erreicht.",
+      impact3:
+        "Ihre Unterstützung kann einer Frau einen Grund geben, weiterhin am Programm teilzunehmen, zu lernen, ihre Fähigkeiten zu entwickeln und daran zu glauben, dass sie ihr Leben verändern kann.",
+      packagesTitle: "Sie können „Metamorphose“ unterstützen mit:",
+      packages: [
+        { amount: "5 €", label: "Paket „Grundbedarf“ / „Starterpaket“" },
+        { amount: "10 €", label: "Paket „Zusätzliche Produkte“" },
+        { amount: "20 €", label: "Paket „Für Kinder“ & „Hygieneartikel“" },
+        { amount: "30 €", label: "Lohn einer Näherin für einen Monat" },
+        { amount: "60 €", label: "Lohn von zwei Näherinnen für einen Monat" },
+      ],
+      closingLines: [
+        "Nicht jede Veränderung beginnt mit einem großen Schritt.",
+        "Manchmal beginnt sie mit einer Unterrichtsstunde.",
+        "Mit einem neu gelernten Stich.",
+        "Mit einem Besuch.",
+        "Mit einem Lebensmittelpaket.",
+        "Mit einer helfenden Hand.",
+      ],
+    },
+    donate: {
+      eyebrow: "Unterstützen Sie unsere Mission",
+      heading: "Jeder Beitrag, ob groß oder klein, fügt unserer Geschichte ein neues Stück hinzu.",
+      subtextBefore: "Welchen Betrag Sie auch geben möchten – Ihr Name bekommt einen Platz auf unserer ",
+      subtextQuilt: "Peperuda-Gemeinschafts-Patchworkdecke",
+      subtextAfter: " – als Würdigung Ihres Beitrags zu dieser Mission.",
+      heroTitle: "Werden Sie Teil der Mission!",
+      heroText:
+        "Ihre Unterstützung macht einen echten Unterschied. Mit Ihrer Hilfe können Frauen neue Fähigkeiten erlernen, unabhängig werden, und Familien können zusammenbleiben.",
+      investQuote: "Investieren Sie schon heute – verändern Sie die Geschichten von morgen.",
+      waysToHelp: {
+        share: {
+          title: "Teilen",
+          description:
+            "Erzählen Sie Ihrer Familie, Ihren Freunden, Ihrem Arbeitsplatz oder Ihrer Organisation von Peperuda und dem, was wir tun!",
+        },
+        purchase: {
+          title: "Produkte kaufen",
+          description: "Kaufen Sie unsere Produkte für sich und Ihre Liebsten!",
+        },
+        finances: {
+          title: "Finanzen",
+          description: "Schon mit einem einmaligen Beitrag können Sie viel bewirken!",
+        },
+      },
+      bankInfoTitle: "Bankverbindung",
+      onlineBanking: "Online-Banking",
+      receiver: "Empfänger",
+      iban: "IBAN",
+      bic: "BIC",
+      orDonateOnline: "Oder online spenden",
+      scanPaypal: "Scannen, um über PayPal zu spenden",
+      scanRevolut: "Scannen, um über Revolut zu spenden",
+      becomeSponsor: "Werden Sie Sponsor",
+      sponsorIntro: "Sie können eine 50-%-Stelle für eine benachteiligte Frau sichern mit:",
+      perDay: "pro Tag",
+      perWeek: "pro Woche",
+      perMonth: "pro Monat",
+      tierDay: "Sichern Sie eine 50-%-Stelle für eine benachteiligte Frau",
+      tierWeek: "Wöchentliche Unterstützung für nachhaltige Wirkung",
+      tierMonth: "Monatlicher Beitrag für dauerhafte Veränderung",
+      moreWaysTitle: "Weitere Möglichkeiten, beizutragen:",
+      moreWay1: "Organisieren Sie Ihre eigene Spendenaktion in Ihrem Umfeld!",
+      moreWay2: "Mit einem regelmäßigen monatlichen Beitrag helfen Sie uns, effektiver zu arbeiten!",
+      thankYou:
+        "Vielen Dank, dass Sie Teil unserer Mission sind, Frauen zu stärken und Gemeinschaften aufzubauen.",
+    },
+    contact: {
+      eyebrow: "Nehmen Sie Kontakt auf",
+      title: "Kontakt",
+      subtitle: "Haben Sie Fragen oder möchten Sie sich engagieren? Wir freuen uns, von Ihnen zu hören.",
+      connectTitle: "Bleiben Sie in Verbindung",
+      addressLabel: "Adresse",
+      address: "Sliven\nDame Gruev 7",
+      workingTimeLabel: "Montag – Freitag",
+      workingTime: "09:00 – 16:00",
+      phoneLabel: "Telefon",
+      emailLabel: "E-Mail",
+      followUs: "Folgen Sie uns",
+      sendTitle: "Schreiben Sie uns",
+      nameLabel: "Name",
+      namePlaceholder: "Ihr Name",
+      emailPlaceholder: "ihre@email.de",
+      subjectLabel: "Betreff",
+      subjectSelect: "Betreff auswählen",
+      subjectGeneral: "Allgemeine Anfrage",
+      subjectVolunteer: "Ehrenamtliche Mitarbeit",
+      subjectDonation: "Fragen zu Spenden",
+      subjectPartnership: "Partnerschaften",
+      messageLabel: "Nachricht",
+      messagePlaceholder: "Wie können wir Ihnen helfen?",
+      sendButton: "Nachricht senden",
+    },
+    footer: {
+      tagline: "Wir stärken Frauen durch Gemeinschaft, Freiheit und nachhaltiges Wachstum.",
+      organization: "Organisation",
+      support: "Unterstützung",
+      connect: "Kontakt",
+      aboutUs: "Über uns",
+      ourValues: "Unsere Werte",
+      news: "Neuigkeiten",
+      donate: "Spenden",
+      volunteer: "Ehrenamt",
+      shop: "Shop",
+      contact: "Kontakt",
+      rights: "2026 Peperuda. Alle Rechte vorbehalten.",
+      privacy: "Datenschutzerklärung",
+      terms: "Nutzungsbedingungen",
     },
   },
 } as const
@@ -440,7 +645,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     const stored = window.localStorage.getItem("peperuda-lang") as Language | null
-    if (stored === "en" || stored === "bg") {
+    if (stored === "en" || stored === "bg" || stored === "de") {
       setLangState(stored)
     }
   }, [])

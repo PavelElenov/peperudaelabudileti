@@ -6,6 +6,7 @@ import { useLanguage, type Language } from "@/lib/i18n"
 const options: { value: Language; label: string }[] = [
   { value: "en", label: "EN" },
   { value: "bg", label: "БГ" },
+  { value: "de", label: "DE" },
 ]
 
 export function LanguageSwitcher() {
