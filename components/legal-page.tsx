@@ -45,7 +45,6 @@ const documents: Record<Language, Record<LegalDocumentKind, LegalDocument>> = {
           heading: "Information you provide",
           paragraphs: [
             "If you contact us by email, we receive your email address and the information you choose to include in your message. We use it to respond to your enquiry and keep necessary correspondence.",
-            "If you use the contact form on this website, we receive your name, email address, chosen subject, and message. The form is delivered to our inbox by email through Resend, our email delivery provider. We use this information only to respond to your enquiry. Please avoid including sensitive information in your message.",
           ],
         },
         {
@@ -65,7 +64,7 @@ const documents: Record<Language, Record<LegalDocumentKind, LegalDocument>> = {
         {
           heading: "Sharing and retention",
           paragraphs: [
-            "We do not sell personal information. Email correspondence, contact form messages, and technical information may be processed by providers needed to operate our email (including Resend), hosting, and analytics services, or by a third-party service you choose to use.",
+            "We do not sell personal information. Email correspondence and technical information may be processed by providers needed to operate our email, hosting, and analytics services, or by a third-party service you choose to use.",
             "We keep correspondence only as long as needed to respond and meet applicable record-keeping requirements.",
           ],
         },
@@ -160,7 +159,6 @@ const documents: Record<Language, Record<LegalDocumentKind, LegalDocument>> = {
           heading: "Информация, която ни предоставяте",
           paragraphs: [
             "Когато се свържете с нас по имейл, получаваме вашия имейл адрес и информацията, която сте избрали да включите в съобщението си. Използваме я, за да отговорим на запитването и да съхраним необходимата кореспонденция.",
-            "Ако използвате формуляра за контакт на сайта, получаваме вашето име, имейл адрес, избраната тема и съобщението ви. Формулярът се доставя в пощата ни по имейл чрез Resend — нашия доставчик на услуги за изпращане на имейли. Използваме тази информация само за да отговорим на запитването ви. Моля, не включвайте чувствителна информация в съобщението си.",
           ],
         },
         {
@@ -180,7 +178,7 @@ const documents: Record<Language, Record<LegalDocumentKind, LegalDocument>> = {
         {
           heading: "Споделяне и съхранение",
           paragraphs: [
-            "Не продаваме лична информация. Кореспонденцията по имейл, съобщенията от формуляра за контакт и техническата информация може да се обработват от доставчици, необходими за електронната ни поща (включително Resend), хостинга и аналитичните услуги, както и от услуга на трета страна, която изберете да използвате.",
+            "Не продаваме лична информация. Кореспонденцията по имейл и техническата информация може да се обработват от доставчици, необходими за електронната ни поща, хостинга и аналитичните услуги, както и от услуга на трета страна, която изберете да използвате.",
             "Съхраняваме кореспонденцията само докато е необходима, за да отговорим и да изпълним приложимите изисквания за водене на документация.",
           ],
         },
@@ -275,7 +273,6 @@ const documents: Record<Language, Record<LegalDocumentKind, LegalDocument>> = {
           heading: "Informationen, die Sie uns geben",
           paragraphs: [
             "Wenn Sie uns per E-Mail kontaktieren, erhalten wir Ihre E-Mail-Adresse und die Informationen, die Sie in Ihre Nachricht aufnehmen. Wir verwenden sie, um Ihre Anfrage zu beantworten und die notwendige Korrespondenz aufzubewahren.",
-            "Wenn Sie das Kontaktformular auf dieser Website nutzen, erhalten wir Ihren Namen, Ihre E-Mail-Adresse, den gewählten Betreff und Ihre Nachricht. Das Formular wird über Resend, unseren E-Mail-Versanddienstleister, per E-Mail an unser Postfach zugestellt. Wir verwenden diese Informationen nur, um Ihre Anfrage zu beantworten. Bitte nehmen Sie keine sensiblen Informationen in Ihre Nachricht auf.",
           ],
         },
         {
@@ -295,7 +292,7 @@ const documents: Record<Language, Record<LegalDocumentKind, LegalDocument>> = {
         {
           heading: "Weitergabe und Speicherdauer",
           paragraphs: [
-            "Wir verkaufen keine personenbezogenen Daten. E-Mail-Korrespondenz, Nachrichten aus dem Kontaktformular und technische Informationen können von Anbietern verarbeitet werden, die für den Betrieb unserer E-Mail- (einschließlich Resend), Hosting- und Analysedienste erforderlich sind, oder von einem Drittanbieter, den Sie selbst nutzen.",
+            "Wir verkaufen keine personenbezogenen Daten. E-Mail-Korrespondenz und technische Informationen können von Anbietern verarbeitet werden, die für den Betrieb unserer E-Mail-, Hosting- und Analysedienste erforderlich sind, oder von einem Drittanbieter, den Sie selbst nutzen.",
             "Wir bewahren Korrespondenz nur so lange auf, wie es für die Beantwortung und die Erfüllung geltender Aufbewahrungspflichten erforderlich ist.",
           ],
         },
