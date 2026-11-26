@@ -14,7 +14,7 @@ export function HeroSection() {
       {/* Full background image */}
       <div className="absolute inset-0">
         <Image
-          src="/images/hero-butterfly.png"
+          src="/images/hero-butterfly.webp"
           alt="Women standing together looking towards a hopeful horizon"
           fill
           className="object-cover"

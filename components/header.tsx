@@ -10,7 +10,7 @@ import { useLanguage } from "@/lib/i18n"
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  const { t } = useLanguage()
+  const { t, localize } = useLanguage()
 
   const navigation = [
     { name: t.nav.home, href: "#" },
@@ -25,7 +25,7 @@ export function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-sm border-b border-border">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
         <div className="flex lg:flex-1">
-          <Link href="/" aria-label="Peperuda home" className="flex items-center">
+          <Link href={localize("/")} aria-label="Peperuda home" className="flex items-center">
             <Image
               src="/images/peperuda-butterfly-transparent.png"
               alt=""

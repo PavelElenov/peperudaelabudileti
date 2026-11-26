@@ -1,8 +1,10 @@
 "use client"
 
-import { createContext, useContext, useEffect, useState, type ReactNode } from "react"
+import { createContext, useContext, type ReactNode } from "react"
+import { usePathname, useRouter } from "next/navigation"
+import { LOCALE_COOKIE, localePath, stripLocale, type Language } from "@/lib/locales"
 
-export type Language = "en" | "bg" | "de"
+export type { Language }
 
 export const translations = {
   en: {
@@ -737,32 +739,28 @@ export type Translation = WidenTranslation<(typeof translations)["en"]>
 type LanguageContextValue = {
   lang: Language
   setLang: (lang: Language) => void
+  /** Prefixes an internal path with the current locale ("/privacy-policy" -> "/bg/privacy-policy"). */
+  localize: (path: string) => string
   t: Translation
 }
 
 const LanguageContext = createContext<LanguageContextValue | null>(null)
 
-export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [lang, setLangState] = useState<Language>("en")
-
-  useEffect(() => {
-    const stored = window.localStorage.getItem("peperuda-lang") as Language | null
-    if (stored === "en" || stored === "bg" || stored === "de") {
-      setLangState(stored)
-    }
-  }, [])
-
-  useEffect(() => {
-    document.documentElement.lang = lang
-  }, [lang])
+export function LanguageProvider({ lang, children }: { lang: Language; children: ReactNode }) {
+  const router = useRouter()
+  const pathname = usePathname()
 
   const setLang = (next: Language) => {
-    setLangState(next)
-    window.localStorage.setItem("peperuda-lang", next)
+    if (next === lang) return
+    // Remember the choice for one year so "/" can send returning visitors to their language.
+    document.cookie = `${LOCALE_COOKIE}=${next}; path=/; max-age=31536000; samesite=lax`
+    router.push(localePath(next, stripLocale(pathname)) + window.location.hash)
   }
 
+  const localize = (path: string) => localePath(lang, path)
+
   return (
-    <LanguageContext.Provider value={{ lang, setLang, t: translations[lang] }}>
+    <LanguageContext.Provider value={{ lang, setLang, localize, t: translations[lang] }}>
       {children}
     </LanguageContext.Provider>
   )

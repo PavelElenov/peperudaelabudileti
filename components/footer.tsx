@@ -8,7 +8,7 @@ const FACEBOOK_URL =
 const INSTAGRAM_URL = "https://www.instagram.com/peperuda.bg"
 
 export function Footer() {
-  const { t } = useLanguage()
+  const { t, localize } = useLanguage()
 
   const footerLinks = {
     organization: [
@@ -35,7 +35,7 @@ export function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
-            <Link href="/" className="font-[family-name:var(--font-script)] text-3xl">
+            <Link href={localize("/")} className="font-[family-name:var(--font-script)] text-3xl">
               Peperuda
             </Link>
             <p className="mt-4 text-sm text-primary-foreground/70 leading-relaxed">
@@ -107,13 +107,13 @@ export function Footer() {
             </p>
             <div className="flex gap-6">
               <Link
-                href="/privacy-policy"
+                href={localize("/privacy-policy")}
                 className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors"
               >
                 {t.footer.privacy}
               </Link>
               <Link
-                href="/terms-of-service"
+                href={localize("/terms-of-service")}
                 className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors"
               >
                 {t.footer.terms}

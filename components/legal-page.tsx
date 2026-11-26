@@ -31,27 +31,33 @@ const documents: Record<Language, Record<LegalDocumentKind, LegalDocument>> = {
     privacy: {
       title: "Privacy Policy",
       eyebrow: "Website information",
-      lastUpdated: "Last updated: November 4, 2026",
+      lastUpdated: "Last updated: November 26, 2026",
       intro:
         "This notice explains how information is handled when you visit the Peperuda website or contact our team.",
       sections: [
         {
           heading: "Who we are",
           paragraphs: [
-            "Peperuda is a community initiative based in Sliven, Bulgaria. For privacy questions or requests, contact us at the email address below.",
+            "This website is operated by Foundation Peperuda - Come Be Fly (\"Peperuda\"), Dame Gruev 7, Sliven, Bulgaria, which is responsible for the personal information described in this notice. For privacy questions or requests, contact us at the email address below.",
           ],
         },
         {
           heading: "Information you provide",
           paragraphs: [
-            "If you contact us by email, we receive your email address and the information you choose to include in your message. We use it to respond to your enquiry and keep necessary correspondence.",
+            "If you contact us by email, phone or social media, we receive your contact details (such as your email address, phone number or profile name) and the information you choose to include in your message. We use it to respond to your enquiry and keep necessary correspondence.",
           ],
         },
         {
           heading: "Analytics and language preference",
           paragraphs: [
             "We use Vercel Analytics to understand general website usage. In providing this service, Vercel may process technical information such as pages visited, referring page, browser or device details, and approximate region. Vercel's own privacy notice applies to its processing.",
-            "Your language selection (English, Bulgarian, or German) is saved in local storage in your browser so the site can remember it. This preference is not sent to Peperuda.",
+            "When you choose a language (English, Bulgarian, or German), we save that choice in a small cookie called \"peperuda-lang\" for up to one year, so the website can open in your language next time. The cookie contains only the language code, is sent to our website when you visit it, and is not used for tracking or advertising. You can delete it at any time in your browser settings.",
+          ],
+        },
+        {
+          heading: "Why we process information",
+          paragraphs: [
+            "We reply to your messages because you asked us to and because we have a legitimate interest in communicating with people who contact us. We use analytics on the basis of our legitimate interest in understanding and improving the website. The language cookie is used only to provide the language setting you choose. Where the law requires us to keep certain records, such as records of donations, we do so to meet that legal obligation.",
           ],
         },
         {
@@ -91,7 +97,7 @@ const documents: Record<Language, Record<LegalDocumentKind, LegalDocument>> = {
     terms: {
       title: "Terms of Service",
       eyebrow: "Using this website",
-      lastUpdated: "Last updated: November 4, 2026",
+      lastUpdated: "Last updated: November 26, 2026",
       intro:
         "These terms apply to your use of the Peperuda website. By using the site, you agree to them. If you do not agree, please stop using the site.",
       sections: [
@@ -124,6 +130,7 @@ const documents: Record<Language, Record<LegalDocumentKind, LegalDocument>> = {
           heading: "Information and liability",
           paragraphs: [
             "We work to keep the information on this site accurate and current, but it is provided for general information and may change. To the extent permitted by law, Peperuda does not guarantee that the site will always be available or error-free. Nothing in these terms excludes rights or protections that cannot be excluded under applicable law.",
+            "These terms are governed by the laws of Bulgaria. This does not take away any protection you have under the mandatory consumer laws of the country where you live.",
           ],
         },
         {
@@ -145,27 +152,33 @@ const documents: Record<Language, Record<LegalDocumentKind, LegalDocument>> = {
     privacy: {
       title: "Политика за поверителност",
       eyebrow: "Информация за сайта",
-      lastUpdated: "Последна актуализация: 4 ноември 2026 г.",
+      lastUpdated: "Последна актуализация: 26 ноември 2026 г.",
       intro:
         "Тази политика обяснява как се обработва информацията, когато посещавате сайта на „Пеперуда“ или се свързвате с нашия екип.",
       sections: [
         {
           heading: "Кои сме ние",
           paragraphs: [
-            "„Пеперуда“ е общностна инициатива в Сливен, България. За въпроси или искания, свързани с поверителността, пишете на посочения по-долу имейл адрес.",
+            "Този сайт се поддържа от Foundation Peperuda - Come Be Fly („Пеперуда“), ж.к. Даме Груев 7, Сливен, България, която отговаря за личната информация, описана в тази политика. За въпроси или искания, свързани с поверителността, пишете на посочения по-долу имейл адрес.",
           ],
         },
         {
           heading: "Информация, която ни предоставяте",
           paragraphs: [
-            "Когато се свържете с нас по имейл, получаваме вашия имейл адрес и информацията, която сте избрали да включите в съобщението си. Използваме я, за да отговорим на запитването и да съхраним необходимата кореспонденция.",
+            "Когато се свържете с нас по имейл, телефон или в социалните мрежи, получаваме данните ви за контакт (например имейл адрес, телефонен номер или име на профил) и информацията, която сте избрали да включите в съобщението си. Използваме я, за да отговорим на запитването и да съхраним необходимата кореспонденция.",
           ],
         },
         {
           heading: "Анализ на посещенията и избор на език",
           paragraphs: [
             "Използваме Vercel Analytics, за да разбираме общото използване на сайта. За предоставянето на услугата Vercel може да обработва техническа информация, например посетени страници, източник на посещението, данни за браузъра или устройството и приблизителен регион. За тази обработка се прилага собствената политика за поверителност на Vercel.",
-            "Избраният от вас език — английски, български или немски — се запазва в локалното хранилище на браузъра, за да може сайтът да го запомни. Това предпочитание не се изпраща до „Пеперуда“.",
+            "Когато изберете език — английски, български или немски — запазваме избора ви в малка бисквитка с име „peperuda-lang“ за срок до една година, за да може сайтът да се отвори на вашия език при следващо посещение. Бисквитката съдържа само кода на езика, изпраща се до нашия сайт, когато го посещавате, и не се използва за проследяване или реклама. Можете да я изтриете по всяко време от настройките на браузъра си.",
+          ],
+        },
+        {
+          heading: "Защо обработваме информацията",
+          paragraphs: [
+            "Отговаряме на съобщенията ви, защото сте ни потърсили, и защото имаме законен интерес да общуваме с хората, които се свързват с нас. Използваме анализ на посещенията въз основа на законния ни интерес да разбираме и подобряваме сайта. Бисквитката за език се използва само за да осигури избраната от вас езикова настройка. Когато законът ни задължава да съхраняваме определени документи, например за дарения, правим това, за да изпълним това законово задължение.",
           ],
         },
         {
@@ -205,7 +218,7 @@ const documents: Record<Language, Record<LegalDocumentKind, LegalDocument>> = {
     terms: {
       title: "Общи условия",
       eyebrow: "Използване на сайта",
-      lastUpdated: "Последна актуализация: 4 ноември 2026 г.",
+      lastUpdated: "Последна актуализация: 26 ноември 2026 г.",
       intro:
         "Тези условия важат за използването на сайта на „Пеперуда“. С използването му се съгласявате с тях. Ако не сте съгласни, моля, преустановете използването на сайта.",
       sections: [
@@ -238,6 +251,7 @@ const documents: Record<Language, Record<LegalDocumentKind, LegalDocument>> = {
           heading: "Информация и отговорност",
           paragraphs: [
             "Стремим се информацията на сайта да бъде точна и актуална, но тя е с общ информационен характер и може да се променя. Доколкото законът позволява, „Пеперуда“ не гарантира, че сайтът винаги ще бъде достъпен или без грешки. Нищо в тези условия не изключва права или защита, които не могат да бъдат изключени съгласно приложимото законодателство.",
+            "Тези условия се уреждат от законодателството на Република България. Това не отнема защитата, която имате съгласно задължителните разпоредби за защита на потребителите в държавата, в която живеете.",
           ],
         },
         {
@@ -259,27 +273,33 @@ const documents: Record<Language, Record<LegalDocumentKind, LegalDocument>> = {
     privacy: {
       title: "Datenschutzerklärung",
       eyebrow: "Informationen zur Website",
-      lastUpdated: "Zuletzt aktualisiert: 4. November 2026",
+      lastUpdated: "Zuletzt aktualisiert: 26. November 2026",
       intro:
         "Diese Erklärung beschreibt, wie mit Informationen umgegangen wird, wenn Sie die Website von Peperuda besuchen oder unser Team kontaktieren.",
       sections: [
         {
           heading: "Wer wir sind",
           paragraphs: [
-            "Peperuda ist eine Gemeinschaftsinitiative mit Sitz in Sliven, Bulgarien. Bei Fragen oder Anliegen zum Datenschutz kontaktieren Sie uns bitte unter der unten angegebenen E-Mail-Adresse.",
+            "Diese Website wird von der Foundation Peperuda - Come Be Fly („Peperuda“), Dame Gruev 7, Sliven, Bulgarien, betrieben, die für die in dieser Erklärung beschriebenen personenbezogenen Daten verantwortlich ist. Bei Fragen oder Anliegen zum Datenschutz kontaktieren Sie uns bitte unter der unten angegebenen E-Mail-Adresse.",
           ],
         },
         {
           heading: "Informationen, die Sie uns geben",
           paragraphs: [
-            "Wenn Sie uns per E-Mail kontaktieren, erhalten wir Ihre E-Mail-Adresse und die Informationen, die Sie in Ihre Nachricht aufnehmen. Wir verwenden sie, um Ihre Anfrage zu beantworten und die notwendige Korrespondenz aufzubewahren.",
+            "Wenn Sie uns per E-Mail, Telefon oder über soziale Medien kontaktieren, erhalten wir Ihre Kontaktdaten (zum Beispiel E-Mail-Adresse, Telefonnummer oder Profilname) und die Informationen, die Sie in Ihre Nachricht aufnehmen. Wir verwenden sie, um Ihre Anfrage zu beantworten und die notwendige Korrespondenz aufzubewahren.",
           ],
         },
         {
           heading: "Analyse und Spracheinstellung",
           paragraphs: [
             "Wir verwenden Vercel Analytics, um die allgemeine Nutzung der Website zu verstehen. Bei der Bereitstellung dieses Dienstes kann Vercel technische Informationen wie besuchte Seiten, verweisende Seite, Browser- oder Gerätedaten und die ungefähre Region verarbeiten. Für diese Verarbeitung gilt die Datenschutzerklärung von Vercel.",
-            "Ihre Sprachauswahl (Englisch, Bulgarisch oder Deutsch) wird im lokalen Speicher Ihres Browsers gespeichert, damit sich die Website daran erinnert. Diese Einstellung wird nicht an Peperuda übermittelt.",
+            "Wenn Sie eine Sprache wählen (Englisch, Bulgarisch oder Deutsch), speichern wir diese Auswahl bis zu einem Jahr in einem kleinen Cookie namens „peperuda-lang“, damit die Website beim nächsten Besuch in Ihrer Sprache geöffnet wird. Das Cookie enthält nur den Sprachcode, wird beim Besuch unserer Website an diese übermittelt und nicht für Tracking oder Werbung verwendet. Sie können es jederzeit in Ihren Browsereinstellungen löschen.",
+          ],
+        },
+        {
+          heading: "Warum wir Daten verarbeiten",
+          paragraphs: [
+            "Wir beantworten Ihre Nachrichten, weil Sie uns kontaktiert haben und wir ein berechtigtes Interesse daran haben, mit Menschen zu kommunizieren, die sich an uns wenden. Die Analyse nutzen wir auf Grundlage unseres berechtigten Interesses, die Website zu verstehen und zu verbessern. Das Sprach-Cookie dient ausschließlich dazu, die von Ihnen gewählte Spracheinstellung bereitzustellen. Soweit wir gesetzlich verpflichtet sind, bestimmte Unterlagen aufzubewahren, etwa zu Spenden, tun wir dies zur Erfüllung dieser rechtlichen Pflicht.",
           ],
         },
         {
@@ -319,7 +339,7 @@ const documents: Record<Language, Record<LegalDocumentKind, LegalDocument>> = {
     terms: {
       title: "Nutzungsbedingungen",
       eyebrow: "Nutzung dieser Website",
-      lastUpdated: "Zuletzt aktualisiert: 4. November 2026",
+      lastUpdated: "Zuletzt aktualisiert: 26. November 2026",
       intro:
         "Diese Bedingungen gelten für Ihre Nutzung der Website von Peperuda. Mit der Nutzung der Website stimmen Sie ihnen zu. Wenn Sie nicht einverstanden sind, nutzen Sie die Website bitte nicht weiter.",
       sections: [
@@ -352,6 +372,7 @@ const documents: Record<Language, Record<LegalDocumentKind, LegalDocument>> = {
           heading: "Informationen und Haftung",
           paragraphs: [
             "Wir bemühen uns, die Informationen auf dieser Website korrekt und aktuell zu halten, sie dienen jedoch der allgemeinen Information und können sich ändern. Soweit gesetzlich zulässig, garantiert Peperuda nicht, dass die Website jederzeit verfügbar oder fehlerfrei ist. Nichts in diesen Bedingungen schließt Rechte oder Schutzmaßnahmen aus, die nach geltendem Recht nicht ausgeschlossen werden können.",
+            "Diese Bedingungen unterliegen bulgarischem Recht. Der Schutz durch zwingende Verbraucherschutzvorschriften Ihres Wohnsitzlandes bleibt davon unberührt.",
           ],
         },
         {
@@ -378,14 +399,14 @@ const providerDetails: Record<Language, { label: string; link: string }> = {
 }
 
 export function LegalPage({ kind }: { kind: LegalDocumentKind }) {
-  const { lang } = useLanguage()
+  const { lang, localize } = useLanguage()
   const page = documents[lang][kind]
 
   return (
     <div className="min-h-screen bg-background text-foreground">
       <header className="border-b border-border bg-background/90">
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
-          <Link href="/" aria-label={page.homeLink} className="flex items-center gap-3">
+          <Link href={localize("/")} aria-label={page.homeLink} className="flex items-center gap-3">
             <Image
               src="/images/peperuda-butterfly-transparent.png"
               alt=""
@@ -397,7 +418,7 @@ export function LegalPage({ kind }: { kind: LegalDocumentKind }) {
           </Link>
           <div className="flex items-center gap-3">
             <LanguageSwitcher />
-            <Link href="/" className="hidden text-sm font-medium text-primary hover:underline sm:inline">
+            <Link href={localize("/")} className="hidden text-sm font-medium text-primary hover:underline sm:inline">
               {page.homeLink}
             </Link>
           </div>
@@ -461,10 +482,10 @@ export function LegalPage({ kind }: { kind: LegalDocumentKind }) {
         </article>
 
         <nav aria-label={page.otherPageLabel} className="mt-8 flex flex-wrap justify-center gap-x-6 gap-y-3 text-sm">
-          <Link href="/privacy-policy" className="text-muted-foreground hover:text-primary hover:underline">
+          <Link href={localize("/privacy-policy")} className="text-muted-foreground hover:text-primary hover:underline">
             {page.privacyLabel}
           </Link>
-          <Link href="/terms-of-service" className="text-muted-foreground hover:text-primary hover:underline">
+          <Link href={localize("/terms-of-service")} className="text-muted-foreground hover:text-primary hover:underline">
             {page.termsLabel}
           </Link>
         </nav>
