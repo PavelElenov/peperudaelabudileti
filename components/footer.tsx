@@ -14,6 +14,7 @@ export function Footer() {
     organization: [
       { name: t.footer.aboutUs, href: "#about" },
       { name: t.footer.ourValues, href: "#about" },
+      { name: t.footer.ourTeam, href: "#team" },
       { name: t.footer.news, href: "#" },
     ],
     support: [

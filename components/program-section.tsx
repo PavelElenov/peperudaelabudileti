@@ -28,14 +28,19 @@ export function ProgramSection() {
 
         {/* Intro: image + text */}
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-16">
-          <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
-            <Image
-              src="/images/metamorphosis-young-hands.png"
-              alt="Hands of two young women with different skin tones guiding fabric through a sewing machine"
-              fill
-              className="object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent" />
+          <div className="relative isolate">
+            {/* Decorative element */}
+            <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-accent rounded-2xl -z-10" />
+            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl shadow-primary/30 ring-1 ring-primary/20">
+              <Image
+                src="/images/metamorphosis-sewing.jpg"
+                alt="Hands guiding a piece of denim with pink embroidery through a sewing machine"
+                fill
+                sizes="(min-width: 1024px) 50vw, 100vw"
+                className="object-cover object-[center_65%]"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/25 via-primary/5 to-transparent" />
+            </div>
           </div>
           <div className="flex flex-col gap-5 text-base md:text-lg leading-relaxed text-muted-foreground">
             <p>{t.program.intro1}</p>

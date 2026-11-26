@@ -145,17 +145,19 @@ export function AboutSection() {
 
         {/* Top section with image and intro */}
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-20">
-          <div className="relative">
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
+          <div className="relative isolate">
+            {/* Decorative element */}
+            <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-accent rounded-2xl -z-10" />
+            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl shadow-primary/30 ring-1 ring-primary/20">
               <Image
-                src="/images/about-young-hands.png"
-                alt="Hands of two young women with different skin tones stitching recycled fabric together"
+                src="/images/about-workshop.jpg"
+                alt="A Peperuda workshop table with colorful thread spools, scissors, beads and fabric scraps"
                 fill
+                sizes="(min-width: 1024px) 50vw, 100vw"
                 className="object-cover"
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/25 via-primary/5 to-transparent" />
             </div>
-            {/* Decorative element */}
-            <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-accent/30 rounded-2xl -z-10" />
           </div>
 
           <div className="flex flex-col gap-4 text-base md:text-lg leading-relaxed text-muted-foreground">

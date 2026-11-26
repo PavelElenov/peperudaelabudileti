@@ -9,6 +9,7 @@ export const translations = {
     nav: {
       home: "Home",
       about: "About Us",
+      team: "Team",
       program: "Program",
       donate: "Donate",
       contact: "Contact",
@@ -82,6 +83,49 @@ export const translations = {
         "I feel ashamed of my first reaction to her, yet I am grateful that in that moment I remembered what truly matters.",
       origin6:
         "What is my assignment, my puzzle piece, through which I can help young mothers find freedom and regain the dignity that belongs to them?",
+    },
+    team: {
+      eyebrow: "Our Team",
+      title: "The people behind Peperuda",
+      subtitle: "Meet the team who bring Peperuda to life every day.",
+      photoAlt:
+        "The Peperuda team – Salome, Jessica and Didi – smiling in front of a purple balloon arch decorated with paper butterflies",
+      funFactLabel: "Fun fact",
+      members: [
+        {
+          name: "Salome",
+          role: "Founder & CEO",
+          origin: "From Switzerland",
+          bio: [
+            "Meet Salome, the founder and CEO of Peperuda. Through this organization, she is bringing a long-held vision to life – creating a space where people can connect, grow and discover their potential.",
+            "Originally from Switzerland, Salome moved to the beautiful mountains of Sliven in 2023. Her background in social work and sales brings valuable experience and a unique perspective to Peperuda.",
+            "While keeping the bigger picture in focus and guiding the organization forward, she is also the creative mind behind our sewing projects.",
+            "Above all, Salome loves connecting with people, discovering their inner beauty and helping them bring it to light.",
+          ],
+          funFact: "Salome loves everything with dots on it!",
+        },
+        {
+          name: "Jessica",
+          role: "Co-founder & Midwife",
+          origin: "From Finland",
+          bio: [
+            "Meet Jessica, co-founder of Peperuda and an essential part of our team. As a qualified midwife, she brings a wealth of knowledge and experience, offering valuable guidance on women’s health, family life and overall well-being.",
+            "Originally from Finland, Jessica spends several days each week in Sliven. Through her expertise, warmth and dedication, she creates opportunities for women and families to learn, connect and feel supported.",
+          ],
+          funFact: "Jessica loves coffee and all things pink!",
+        },
+        {
+          name: "Didi",
+          role: "Accounting, Administration & Social Media",
+          origin: "From Sliven, Bulgaria",
+          bio: [
+            "Let us introduce you to Didi! Peperuda simply wouldn’t be the same without her!",
+            "Her skills and passion, combined with her deep understanding of Bulgarian culture, bring so many different aspects of our work together. She is the person behind all things accounting, administration and social media, making sure everything runs smoothly, both behind the scenes and in the digital world.",
+            "Having grown up in Sliven, Didi has a special connection to the local community. Today, she is a true blessing to Peperuda and to the community as a whole, bringing her knowledge, dedication and heart into everything she does.",
+          ],
+          funFact: "Didi loves everything to do with lions!",
+        },
+      ],
     },
     program: {
       eyebrow: "Our Program",
@@ -189,6 +233,7 @@ export const translations = {
       connect: "Connect",
       aboutUs: "About Us",
       ourValues: "Our Values",
+      ourTeam: "Our Team",
       news: "News",
       donate: "Donate",
       volunteer: "Volunteer",
@@ -203,6 +248,7 @@ export const translations = {
     nav: {
       home: "Начало",
       about: "За нас",
+      team: "Екип",
       program: "Програма",
       donate: "Дарете",
       contact: "Контакти",
@@ -276,6 +322,49 @@ export const translations = {
         "Срам ме е от първата ми реакция към нея, но съм благодарна, че в онзи момент си спомних какво наистина има значение.",
       origin6:
         "Каква е моята задача, моето парченце от пъзела, чрез което мога да помогна на младите майки да намерят свобода и да си върнат достойнството, което им принадлежи?",
+    },
+    team: {
+      eyebrow: "Нашият екип",
+      title: "Хората зад Пеперуда",
+      subtitle: "Запознайте се с екипа, който всеки ден вдъхва живот на Пеперуда.",
+      photoAlt:
+        "Екипът на Пеперуда – Саломе, Джесика и Диди – усмихнати пред арка от лилави балони, украсена с хартиени пеперуди",
+      funFactLabel: "Любопитен факт",
+      members: [
+        {
+          name: "Саломе",
+          role: "Основател и изпълнителен директор",
+          origin: "От Швейцария",
+          bio: [
+            "Запознайте се със Саломе – основател и изпълнителен директор на Пеперуда. Чрез тази организация тя осъществява своя дългогодишна мечта – да създаде място, където хората могат да се свързват, да растат и да откриват своя потенциал.",
+            "Родом от Швейцария, Саломе се премества в красивите планини на Сливен през 2023 г. Опитът ѝ в социалната работа и продажбите внася ценни знания и уникална гледна точка в Пеперуда.",
+            "Докато държи фокуса върху голямата картина и води организацията напред, тя е и творческият ум зад нашите шивашки проекти.",
+            "Повече от всичко Саломе обича да се среща с хора, да открива вътрешната им красота и да им помага да я покажат на света.",
+          ],
+          funFact: "Саломе обожава всичко на точки!",
+        },
+        {
+          name: "Джесика",
+          role: "Съосновател и акушерка",
+          origin: "От Финландия",
+          bio: [
+            "Запознайте се с Джесика – съосновател на Пеперуда и незаменима част от нашия екип. Като квалифицирана акушерка тя притежава богати знания и опит и дава ценни насоки за женското здраве, семейния живот и цялостното благополучие.",
+            "Родом от Финландия, Джесика прекарва по няколко дни всяка седмица в Сливен. С експертизата, топлотата и всеотдайността си тя създава възможности жените и семействата да учат, да се свързват помежду си и да се чувстват подкрепени.",
+          ],
+          funFact: "Джесика обича кафе и всичко розово!",
+        },
+        {
+          name: "Диди",
+          role: "Счетоводство, администрация и социални мрежи",
+          origin: "От Сливен, България",
+          bio: [
+            "Позволете ни да ви представим Диди! Пеперуда просто нямаше да е същата без нея!",
+            "Нейните умения и страст, съчетани с дълбокото ѝ познаване на българската култура, обединяват много различни аспекти на нашата работа. Тя е човекът зад счетоводството, администрацията и социалните мрежи и се грижи всичко да върви гладко – както зад кулисите, така и в дигиталния свят.",
+            "Израснала в Сливен, Диди има специална връзка с местната общност. Днес тя е истинска благословия за Пеперуда и за цялата общност, като влага своите знания, всеотдайност и сърце във всичко, което прави.",
+          ],
+          funFact: "Диди обожава всичко, свързано с лъвове!",
+        },
+      ],
     },
     program: {
       eyebrow: "Нашата програма",
@@ -383,6 +472,7 @@ export const translations = {
       connect: "Свържете се",
       aboutUs: "За нас",
       ourValues: "Нашите ценности",
+      ourTeam: "Нашият екип",
       news: "Новини",
       donate: "Дарете",
       volunteer: "Доброволчество",
@@ -397,6 +487,7 @@ export const translations = {
     nav: {
       home: "Startseite",
       about: "Über uns",
+      team: "Team",
       program: "Programm",
       donate: "Spenden",
       contact: "Kontakt",
@@ -470,6 +561,49 @@ export const translations = {
         "Ich schäme mich für meine erste Reaktion, und doch bin ich dankbar, dass ich mich in diesem Moment daran erinnert habe, was wirklich zählt.",
       origin6:
         "Was ist meine Aufgabe, mein Puzzleteil, mit dem ich jungen Müttern helfen kann, Freiheit zu finden und die Würde zurückzugewinnen, die ihnen zusteht?",
+    },
+    team: {
+      eyebrow: "Unser Team",
+      title: "Die Menschen hinter Peperuda",
+      subtitle: "Lernen Sie das Team kennen, das Peperuda jeden Tag mit Leben füllt.",
+      photoAlt:
+        "Das Peperuda-Team – Salome, Jessica und Didi – lächelnd vor einem lila Ballonbogen, geschmückt mit Papierschmetterlingen",
+      funFactLabel: "Fun Fact",
+      members: [
+        {
+          name: "Salome",
+          role: "Gründerin & Geschäftsführerin",
+          origin: "Aus der Schweiz",
+          bio: [
+            "Das ist Salome, die Gründerin und Geschäftsführerin von Peperuda. Mit dieser Organisation verwirklicht sie eine lang gehegte Vision – einen Ort zu schaffen, an dem Menschen einander begegnen, wachsen und ihr Potenzial entdecken können.",
+            "Ursprünglich aus der Schweiz, zog Salome 2023 in die wunderschönen Berge von Sliven. Ihr Hintergrund in Sozialarbeit und Verkauf bringt wertvolle Erfahrung und eine besondere Perspektive in Peperuda ein.",
+            "Während sie das große Ganze im Blick behält und die Organisation voranbringt, ist sie zugleich der kreative Kopf hinter unseren Nähprojekten.",
+            "Vor allem liebt Salome es, Menschen zu begegnen, ihre innere Schönheit zu entdecken und ihnen zu helfen, sie zum Vorschein zu bringen.",
+          ],
+          funFact: "Salome liebt alles mit Punkten!",
+        },
+        {
+          name: "Jessica",
+          role: "Mitgründerin & Hebamme",
+          origin: "Aus Finnland",
+          bio: [
+            "Das ist Jessica, Mitgründerin von Peperuda und ein unverzichtbarer Teil unseres Teams. Als ausgebildete Hebamme bringt sie einen reichen Schatz an Wissen und Erfahrung mit und bietet wertvolle Begleitung rund um Frauengesundheit, Familienleben und ganzheitliches Wohlbefinden.",
+            "Ursprünglich aus Finnland, verbringt Jessica jede Woche mehrere Tage in Sliven. Mit ihrem Fachwissen, ihrer Herzlichkeit und ihrem Engagement schafft sie Gelegenheiten, in denen Frauen und Familien lernen, Gemeinschaft erleben und sich unterstützt fühlen.",
+          ],
+          funFact: "Jessica liebt Kaffee und alles, was rosa ist!",
+        },
+        {
+          name: "Didi",
+          role: "Buchhaltung, Verwaltung & Social Media",
+          origin: "Aus Sliven, Bulgarien",
+          bio: [
+            "Wir stellen vor: Didi! Ohne sie wäre Peperuda einfach nicht dasselbe!",
+            "Ihre Fähigkeiten und ihre Leidenschaft, verbunden mit ihrem tiefen Verständnis der bulgarischen Kultur, bringen viele verschiedene Bereiche unserer Arbeit zusammen. Sie ist zuständig für Buchhaltung, Verwaltung und Social Media und sorgt dafür, dass alles reibungslos läuft – hinter den Kulissen ebenso wie in der digitalen Welt.",
+            "Da sie in Sliven aufgewachsen ist, hat Didi eine besondere Verbindung zur örtlichen Gemeinschaft. Heute ist sie ein wahrer Segen für Peperuda und für die ganze Gemeinschaft und bringt ihr Wissen, ihre Hingabe und ihr Herz in alles ein, was sie tut.",
+          ],
+          funFact: "Didi liebt alles, was mit Löwen zu tun hat!",
+        },
+      ],
     },
     program: {
       eyebrow: "Unser Programm",
@@ -577,6 +711,7 @@ export const translations = {
       connect: "Kontakt",
       aboutUs: "Über uns",
       ourValues: "Unsere Werte",
+      ourTeam: "Unser Team",
       news: "Neuigkeiten",
       donate: "Spenden",
       volunteer: "Ehrenamt",
